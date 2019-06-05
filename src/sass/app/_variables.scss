@@ -1,0 +1,46 @@
+// General
+//
+$primary-color: #3a0d5a !default;
+$primary-color-dark: darken($primary-color, 10%) !default;
+$secondary-color: #e4a501 !default;
+$complimentry-color: #e34b1c;
+
+$body-spacing-h: 40px;
+$body-spacing-v: 30px;
+$mobile-body-spacing-h: 20px;
+$mobile-body-spacing-v: 20px;
+
+// Hero
+//
+$hero-spacing-h: $body-spacing-h;
+$hero-spacing-v: $body-spacing-v;
+$mobile-hero-spacing-h: $mobile-body-spacing-v;
+$mobile-hero-spacing-v: $mobile-body-spacing-v;
+
+// $header-bg: #e4a501;
+// $header-color: #333;
+// $header-highlight: $primary-color;
+$header-bg: $primary-color;
+$header-color: #fff;
+$header-highlight: $secondary-color;
+
+// Mouse
+//
+$mouse-color: #fff;
+$mouse-width: 30px;
+$mouse-height: 50px;
+$mouse-border-width: 2px;
+$wheel-size: $mouse-border-width * 2;
+$mouse-margin: 50px;
+
+// Navigation
+//
+$nav-bg1: $secondary-color;
+$nav-bg2: #333;
+$nav-bg3: $complimentry-color;
+$nav-highlight: $secondary-color;
+
+$nav-toggle-size: 3em;
+$nav-toggle-color: #fff;
+$nav-toggle-bg: transparent;
+$transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
