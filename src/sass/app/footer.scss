@@ -1,0 +1,31 @@
+// Footer
+.footer-wrapper {
+  padding: 3rem 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 30rem;
+
+  li {
+    flex-basis: 25%;
+  }
+
+  a {
+    color: #fff;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: rgba(#fff, 0.65);
+  margin: 2rem 0;
+}

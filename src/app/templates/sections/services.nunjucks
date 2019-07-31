@@ -1,0 +1,99 @@
+<article id="services" class="section-wrapper">
+  <div class="section-inner">
+    {% import 'partials/header.nunjucks' as sectionHead %}
+    {{
+      sectionHead.content(
+        "Our Services",
+        "Full service end to end digital capabilities",
+        "We create custom websites,  ecommerce solutions,  native/web apps, and offer maintenance services."
+      )
+    }}
+    <div class="service-wrapper">
+      <section id="service_web" class="service-block">
+        <div class="block-image">
+          <img src="/img/service_web.svg" alt="Website development" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">Website design &amp; development</h4>
+          <p class="service-desc">
+            Whether you need a simple business website or fully custom B2B solution, we are
+            here to help. We will work with you to create the best solution for your business
+            needs and budget with the most up-to-date technology.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>CMS Solutions</li>
+            <li>Business Websites</li>
+            <li>Web Application & Software</li>
+            <li>Desktop, Tablet, and Mobile UI</li>
+            <li>Database & API Intergration</li>
+            <li>Cloud Hosting (AWS) & domain setup</li>
+          </ul>
+        </div>
+      </section>
+      <section id="service_app" class="service-block">
+        <div class="block-image">
+          <img src="/img/service_app.svg" alt="App development" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">App design &amp; development</h4>
+          <p class="service-desc">
+            Have an idea for an app? We are focused on creating elegant solutions to solve
+            complex problems. Whether you need a native or web-based application, we can create
+            exactly what you need with today’s most modern technology avaliable.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>Hybrid Web Applications</li>
+            <li>iOS / Android Native Applications</li>
+            <li>Media Applications</li>
+            <li>UX & Wireframing</li>
+            <li>Cross platform API structures</li>
+            <li>B2B or Consumer Applications</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="service_ecommerce" class="service-block">
+        <div class="block-image">
+          <img src="/img/service_ecom.svg" alt="Ecommerce solutions" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">Ecommerce solutions</h4>
+          <p class="service-desc">
+            Impress your customers with our professional e-commerce solutions. The systems we
+            create are capable of coping with large streams of orders and visitor. We integrate
+            direct payment systems and other programs depending on your business needs.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>Shopify</li>
+            <li>Wordpress Woo Commerce</li>
+            <li>Custom E-commerce Platform</li>
+            <li>Payment System intergration</li>
+            <li>Booking Systems</li>
+            <li>Live Chat Technology</li>
+          </ul>
+        </div>
+      </section>
+      <section id="service_support" class="service-block">
+        <div class="block-image">
+          <img src="/img/service_support.svg" alt="Maintenance support" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">Maintenance &amp; Support</h4>
+          <p class="service-desc">
+            We can help with on-going technical support, maintenance and development. Our
+            maintenance packages includes content management, analytics, knowledge transfer &
+            training, strategic advisement, hosting and dependency updates.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>Domain and Email setup</li>
+            <li>Cloud hosting setup (AWS)</li>
+            <li>Web application support & training</li>
+            <li>Monitoring and analytics</li>
+            <li>Website backups</li>
+            <li>Security auditing & updates</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</article>

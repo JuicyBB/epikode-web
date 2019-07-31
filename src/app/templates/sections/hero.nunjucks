@@ -1,0 +1,52 @@
+<div id="hero" class="hero section-wrapper">
+  <div class="section-inner">
+    <div class="hero-content">
+      <header class="headline">
+        <h2 class="baffle">Epikode</h2>
+        <h1>Vancouver based digital design and development agency.</h1>
+        <h3>
+          We build custom
+          <span
+            id="scroll-text"
+            data-items="website, ecommerce, web app, mobile app, marketing"
+          ></span
+          ><i></i> solutions.
+        </h3>
+        <a href="#" class="btn-outline">Our Services<i class="fas fa-arrow-right mr-1"></i></a>
+      </header>
+    </div>
+    <div class="scroll-mouse">
+      <div class="inner">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-layover layover-left">
+    <div class="service-taglines">
+      <ul class="list-unstyled">
+        <li>UX design</li>
+        <li>Full stack development</li>
+        <li>Cloud depolyment</li>
+        <li>Hosting service</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-layover layover-right">
+    {% include "partials/nav.nunjucks" %}
+    <button type="button" class="nav-toggle" aria-label="Toggle navigation">
+      <div class="nav-icon"></div>
+    </button>
+    <div class="section-hint">
+      <div class="hint-content">
+        <span id="hero-hint">Scroll Down</span>
+        <span id="services-hint">Our Services</span>
+        <span id="projects-hint">Past Work</span>
+      </div>
+    </div>
+    <div class="brand">
+      <img class="logo" src="/img/epikode-logo.svg" alt="Epikode" />
+    </div>
+  </div>
+</div>

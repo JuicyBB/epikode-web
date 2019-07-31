@@ -1,0 +1,32 @@
+#about {
+  .header-wrapper {
+    max-width: 62rem;
+    width: auto;
+    min-width: unset;
+
+    .header-main {
+      font-size: 2.25rem;
+    }
+  }
+}
+
+.about-wrapper {
+  padding-bottom: $section-spacing-v;
+}
+
+.about-block {
+  max-width: 25rem;
+
+  img {
+    width: 6rem;
+  }
+
+  .about-header {
+    font-size: 1.8rem;
+    margin: $block-spacing 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}

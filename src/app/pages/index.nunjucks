@@ -1,0 +1,28 @@
+{% extends "layout.nunjucks" %}
+
+<!-- Block content -->
+{% block content %}
+
+<!-- Hero Include -->
+{% include "sections/hero.nunjucks" %}
+
+<!-- Services Include -->
+{% include "sections/services.nunjucks" %}
+
+<!-- Projects Include -->
+{% include "sections/projects.nunjucks" %}
+
+<!-- About Include -->
+{% include "sections/about.nunjucks" %}
+
+<!-- Tech Stack Include -->
+{% include "sections/tech.nunjucks" %}
+
+<!-- Contact Include -->
+{% include "sections/contact.nunjucks" %}
+
+<!-- Footer Include -->
+{% include "sections/footer.nunjucks" %}
+
+<!-- Block content end -->
+{% endblock %}

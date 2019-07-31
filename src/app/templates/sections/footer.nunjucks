@@ -1,0 +1,15 @@
+<footer class="section-wrapper">
+  <div class="section-inner">
+    <div class="footer-wrapper"></div>
+      <ul class="footer-links list-unstyled">
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Past Projects</a></li>
+        <li><a href="#">Our Process</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Client Login</a></li>
+      </ul>
+      <p class="copyright">Copyright Epikode Studio Inc. 2019 All rights reserved.</p>
+    </div>
+  </div>
+</footer>

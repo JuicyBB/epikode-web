@@ -1,8 +1,8 @@
 {
   "name": "epikode",
   "version": "1.0.0",
-  "description": "Epikode website",
-  "main": "index.js",
+  "description": "Epikode Studio Inc official website. We provide full-service end to end digital solutions. We build websites, ecommerce platforms, web applications, mobile apps, and offer maintenance services. We are based in and around Vancouver Canada area.",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "http://github.com/your-username/project"
+    "url": "https://github.com/epikode"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",
@@ -26,6 +26,7 @@
     "gulp-jshint": "^2.0.4",
     "gulp-livereload": "^3.8.1",
     "gulp-markdown": "^1.2.0",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-optimize-js": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",

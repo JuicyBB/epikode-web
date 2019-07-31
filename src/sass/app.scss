@@ -1,11 +1,18 @@
+@import "bootstrap/functions";
+@import "app/colors";
+@import "app/variables";
+@import "app/constants";
 
-@import 'bootstrap/bootstrap';
-// @import 'bootstrap/bootstrap-grid';
-// @import 'materialcss/materialize';
-// @import 'vendor/grid.min';
+@import "bootstrap/bootstrap";
 
-@import 'app/variables';
-@import 'app/mixins';
-@import 'app/base';
-@import 'app/hero';
-@import 'app/nav';
+@import "app/mixins";
+@import "app/base";
+@import "app/hero";
+@import "app/nav";
+@import "app/services";
+@import "app/projects";
+@import "app/process";
+@import "app/tech";
+@import "app/about";
+@import "app/contact";
+@import "app/footer";

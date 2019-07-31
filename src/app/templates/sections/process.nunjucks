@@ -1,0 +1,13 @@
+<article id="process" class="section-wrapper">
+  <div class="section-inner">
+    {% import 'partials/header.nunjucks' as sectionHead %}
+    {{
+      sectionHead.content(
+        "Our Process",
+        "A solid process & good planning is halfway to success",
+        "We use agile workflow and solid development
+      standards to deliver success for all of our projects."
+      )
+    }}
+  </div>
+</article>

@@ -1,0 +1,7814 @@
+/*!
+ * epikode v1.0.0: Epikode Studio Inc official website. We provide full-service end to end digital solutions. We build websites, ecommerce platforms, web applications, mobile apps, and offer maintenance services. We are based in and around Vancouver Canada area.
+ * (c) 2019 
+ * ISC License
+ * https://github.com/epikode
+ */
+
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/* line 1, src/sass/bootstrap/_root.scss */
+:root {
+  --blue: #203a7c;
+  --purple: #3a0d5a;
+  --cherry: #93104f;
+  --pink: #e53655;
+  --red: #ab1515;
+  --orange: #da6f0d;
+  --yellow: #ffb402;
+  --green: #4d7b1e;
+  --teal: #0ab092;
+  --cyan: #0a88b0;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #3a0d5a;
+  --secondary: #ffb402;
+  --success: #4d7b1e;
+  --info: #0a88b0;
+  --warning: #ffb402;
+  --danger: #ab1515;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1281px;
+  --font-family-sans-serif: Titillium Web, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* line 19, src/sass/bootstrap/_reboot.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 25, src/sass/bootstrap/_reboot.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 35, src/sass/bootstrap/_reboot.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* line 46, src/sass/bootstrap/_reboot.scss */
+body {
+  margin: 0;
+  font-family: Titillium Web, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* line 62, src/sass/bootstrap/_reboot.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/* line 72, src/sass/bootstrap/_reboot.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 88, src/sass/bootstrap/_reboot.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* line 97, src/sass/bootstrap/_reboot.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 110, src/sass/bootstrap/_reboot.scss */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  text-decoration-skip-ink: none;
+}
+
+/* line 119, src/sass/bootstrap/_reboot.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 125, src/sass/bootstrap/_reboot.scss */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 132, src/sass/bootstrap/_reboot.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+/* line 139, src/sass/bootstrap/_reboot.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 143, src/sass/bootstrap/_reboot.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* line 148, src/sass/bootstrap/_reboot.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 152, src/sass/bootstrap/_reboot.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 157, src/sass/bootstrap/_reboot.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 166, src/sass/bootstrap/_reboot.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 174, src/sass/bootstrap/_reboot.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 175, src/sass/bootstrap/_reboot.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 182, src/sass/bootstrap/_reboot.scss */
+a {
+  color: #ffb402;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+a:hover {
+  color: #b57f00;
+  text-decoration: none;
+}
+
+/* line 199, src/sass/bootstrap/_reboot.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 208, src/sass/bootstrap/_reboot.scss */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* line 218, src/sass/bootstrap/_reboot.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+/* line 226, src/sass/bootstrap/_reboot.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+/* line 240, src/sass/bootstrap/_reboot.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 250, src/sass/bootstrap/_reboot.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 255, src/sass/bootstrap/_reboot.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 267, src/sass/bootstrap/_reboot.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 271, src/sass/bootstrap/_reboot.scss */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* line 279, src/sass/bootstrap/_reboot.scss */
+th {
+  text-align: inherit;
+}
+
+/* line 290, src/sass/bootstrap/_reboot.scss */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 299, src/sass/bootstrap/_reboot.scss */
+button {
+  border-radius: 0;
+}
+
+/* line 308, src/sass/bootstrap/_reboot.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* line 313, src/sass/bootstrap/_reboot.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 324, src/sass/bootstrap/_reboot.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 329, src/sass/bootstrap/_reboot.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 337, src/sass/bootstrap/_reboot.scss */
+select {
+  word-wrap: normal;
+}
+
+/* line 345, src/sass/bootstrap/_reboot.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 358, src/sass/bootstrap/_reboot.scss */
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+/* line 365, src/sass/bootstrap/_reboot.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 373, src/sass/bootstrap/_reboot.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 380, src/sass/bootstrap/_reboot.scss */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+/* line 392, src/sass/bootstrap/_reboot.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* line 398, src/sass/bootstrap/_reboot.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 413, src/sass/bootstrap/_reboot.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* line 425, src/sass/bootstrap/_reboot.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 430, src/sass/bootstrap/_reboot.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 435, src/sass/bootstrap/_reboot.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* line 448, src/sass/bootstrap/_reboot.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 457, src/sass/bootstrap/_reboot.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 466, src/sass/bootstrap/_reboot.scss */
+output {
+  display: inline-block;
+}
+
+/* line 470, src/sass/bootstrap/_reboot.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 475, src/sass/bootstrap/_reboot.scss */
+template {
+  display: none;
+}
+
+/* line 481, src/sass/bootstrap/_reboot.scss */
+[hidden] {
+  display: none !important;
+}
+
+/* line 7, src/sass/bootstrap/_type.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* line 16, src/sass/bootstrap/_type.scss */
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+/* line 17, src/sass/bootstrap/_type.scss */
+h2, .h2 {
+  font-size: 2rem;
+}
+
+/* line 18, src/sass/bootstrap/_type.scss */
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+/* line 19, src/sass/bootstrap/_type.scss */
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+/* line 20, src/sass/bootstrap/_type.scss */
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+/* line 21, src/sass/bootstrap/_type.scss */
+h6, .h6 {
+  font-size: 1rem;
+}
+
+/* line 23, src/sass/bootstrap/_type.scss */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* line 29, src/sass/bootstrap/_type.scss */
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 34, src/sass/bootstrap/_type.scss */
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 39, src/sass/bootstrap/_type.scss */
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 44, src/sass/bootstrap/_type.scss */
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 55, src/sass/bootstrap/_type.scss */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 67, src/sass/bootstrap/_type.scss */
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+/* line 73, src/sass/bootstrap/_type.scss */
+mark,
+.mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+}
+
+/* line 84, src/sass/bootstrap/_type.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 89, src/sass/bootstrap/_type.scss */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 92, src/sass/bootstrap/_type.scss */
+.list-inline-item {
+  display: inline-block;
+}
+
+/* line 95, src/sass/bootstrap/_type.scss */
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+/* line 106, src/sass/bootstrap/_type.scss */
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 112, src/sass/bootstrap/_type.scss */
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* line 117, src/sass/bootstrap/_type.scss */
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
+}
+
+/* line 122, src/sass/bootstrap/_type.scss */
+.blockquote-footer::before {
+  content: "\2014\00A0";
+}
+
+/* line 8, src/sass/bootstrap/_images.scss */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 14, src/sass/bootstrap/_images.scss */
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 29, src/sass/bootstrap/_images.scss */
+.figure {
+  display: inline-block;
+}
+
+/* line 34, src/sass/bootstrap/_images.scss */
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+/* line 39, src/sass/bootstrap/_images.scss */
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d;
+}
+
+/* line 6, src/sass/bootstrap/_grid.scss */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  /* line 6, src/sass/bootstrap/_grid.scss */
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 6, src/sass/bootstrap/_grid.scss */
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 6, src/sass/bootstrap/_grid.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 6, src/sass/bootstrap/_grid.scss */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* line 18, src/sass/bootstrap/_grid.scss */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 28, src/sass/bootstrap/_grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 34, src/sass/bootstrap/_grid.scss */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 38, src/sass/bootstrap/_grid.scss */
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 8, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 31, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* line 36, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+/* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 48, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-first {
+  order: -1;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-last {
+  order: 13;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-0 {
+  order: 0;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-1 {
+  order: 1;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-2 {
+  order: 2;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-3 {
+  order: 3;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-4 {
+  order: 4;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-5 {
+  order: 5;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-6 {
+  order: 6;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-7 {
+  order: 7;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-8 {
+  order: 8;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-9 {
+  order: 9;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-10 {
+  order: 10;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-11 {
+  order: 11;
+}
+
+/* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+.order-12 {
+  order: 12;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-3 {
+  margin-left: 25%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-6 {
+  margin-left: 50%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-9 {
+  margin-left: 75%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+.offset-11 {
+  margin-left: 91.66667%;
+}
+
+@media (min-width: 576px) {
+  /* line 31, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 36, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 48, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-first {
+    order: -1;
+  }
+  /* line 50, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-last {
+    order: 13;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-0 {
+    order: 0;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-1 {
+    order: 1;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-2 {
+    order: 2;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-3 {
+    order: 3;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-4 {
+    order: 4;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-5 {
+    order: 5;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-6 {
+    order: 6;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-7 {
+    order: 7;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-8 {
+    order: 8;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-9 {
+    order: 9;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-10 {
+    order: 10;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-11 {
+    order: 11;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-sm-12 {
+    order: 12;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-sm-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 31, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 36, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 48, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-first {
+    order: -1;
+  }
+  /* line 50, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-last {
+    order: 13;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-0 {
+    order: 0;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-1 {
+    order: 1;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-2 {
+    order: 2;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-3 {
+    order: 3;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-4 {
+    order: 4;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-5 {
+    order: 5;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-6 {
+    order: 6;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-7 {
+    order: 7;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-8 {
+    order: 8;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-9 {
+    order: 9;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-10 {
+    order: 10;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-11 {
+    order: 11;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-md-12 {
+    order: 12;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-0 {
+    margin-left: 0;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-md-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 31, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 36, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 48, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-first {
+    order: -1;
+  }
+  /* line 50, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-last {
+    order: 13;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-0 {
+    order: 0;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-1 {
+    order: 1;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-2 {
+    order: 2;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-3 {
+    order: 3;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-4 {
+    order: 4;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-5 {
+    order: 5;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-6 {
+    order: 6;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-7 {
+    order: 7;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-8 {
+    order: 8;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-9 {
+    order: 9;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-10 {
+    order: 10;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-11 {
+    order: 11;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-lg-12 {
+    order: 12;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-lg-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 31, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /* line 36, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  /* line 43, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /* line 48, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-first {
+    order: -1;
+  }
+  /* line 50, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-last {
+    order: 13;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-0 {
+    order: 0;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-1 {
+    order: 1;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-2 {
+    order: 2;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-3 {
+    order: 3;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-4 {
+    order: 4;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-5 {
+    order: 5;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-6 {
+    order: 6;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-7 {
+    order: 7;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-8 {
+    order: 8;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-9 {
+    order: 9;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-10 {
+    order: 10;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-11 {
+    order: 11;
+  }
+  /* line 53, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .order-xl-12 {
+    order: 12;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+  /* line 59, src/sass/bootstrap/mixins/_grid-framework.scss */
+  .offset-xl-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* line 7, src/sass/bootstrap/_buttons.scss */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 7, src/sass/bootstrap/_buttons.scss */
+  .btn {
+    transition: none;
+  }
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+/* line 25, src/sass/bootstrap/_buttons.scss */
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(58, 13, 90, 0.25);
+}
+
+/* line 32, src/sass/bootstrap/_buttons.scss */
+.btn.disabled, .btn:disabled {
+  opacity: 0.65;
+}
+
+/* line 49, src/sass/bootstrap/_buttons.scss */
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #3a0d5a;
+  border-color: #3a0d5a;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #240839;
+  border-color: #1d072d;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 49, 115, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #3a0d5a;
+  border-color: #3a0d5a;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #1d072d;
+  border-color: #160522;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 49, 115, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-secondary {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-secondary:hover {
+  color: #212529;
+  background-color: #db9a00;
+  border-color: #ce9100;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-secondary:focus, .btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 159, 8, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #ce9100;
+  border-color: #c18800;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 159, 8, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-success {
+  color: #fff;
+  background-color: #4d7b1e;
+  border-color: #4d7b1e;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-success:hover {
+  color: #fff;
+  background-color: #3a5c17;
+  border-color: #335214;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-success:focus, .btn-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(104, 143, 64, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-success.disabled, .btn-success:disabled {
+  color: #fff;
+  background-color: #4d7b1e;
+  border-color: #4d7b1e;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
+.show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #335214;
+  border-color: #2d4812;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(104, 143, 64, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-info {
+  color: #fff;
+  background-color: #0a88b0;
+  border-color: #0a88b0;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-info:hover {
+  color: #fff;
+  background-color: #086c8c;
+  border-color: #076380;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-info:focus, .btn-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 154, 188, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-info.disabled, .btn-info:disabled {
+  color: #fff;
+  background-color: #0a88b0;
+  border-color: #0a88b0;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #076380;
+  border-color: #075974;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 154, 188, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-warning {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-warning:hover {
+  color: #212529;
+  background-color: #db9a00;
+  border-color: #ce9100;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-warning:focus, .btn-warning.focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 159, 8, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-warning.disabled, .btn-warning:disabled {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
+.show > .btn-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #ce9100;
+  border-color: #c18800;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
+.show > .btn-warning.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 159, 8, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-danger {
+  color: #fff;
+  background-color: #ab1515;
+  border-color: #ab1515;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-danger:hover {
+  color: #fff;
+  background-color: #891111;
+  border-color: #7e0f0f;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-danger:focus, .btn-danger.focus {
+  box-shadow: 0 0 0 0.2rem rgba(184, 56, 56, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-danger.disabled, .btn-danger:disabled {
+  color: #fff;
+  background-color: #ab1515;
+  border-color: #ab1515;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active,
+.show > .btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #7e0f0f;
+  border-color: #720e0e;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-danger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(184, 56, 56, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-light {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-light:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-light:focus, .btn-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-light.disabled, .btn-light:disabled {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+/* line 60, src/sass/bootstrap/_buttons.scss */
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+/* line 18, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-dark:focus, .btn-dark.focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+/* line 29, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-dark.disabled, .btn-dark:disabled {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* line 40, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #1d2124;
+  border-color: #171a1d;
+}
+
+/* line 50, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-primary {
+  color: #3a0d5a;
+  border-color: #3a0d5a;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #3a0d5a;
+  border-color: #3a0d5a;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(58, 13, 90, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #3a0d5a;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3a0d5a;
+  border-color: #3a0d5a;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(58, 13, 90, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-secondary {
+  color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-secondary:hover {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 180, 2, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+  color: #ffb402;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 180, 2, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-success {
+  color: #4d7b1e;
+  border-color: #4d7b1e;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #4d7b1e;
+  border-color: #4d7b1e;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-success:focus, .btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 123, 30, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+  color: #4d7b1e;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #4d7b1e;
+  border-color: #4d7b1e;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 123, 30, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-info {
+  color: #0a88b0;
+  border-color: #0a88b0;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #0a88b0;
+  border-color: #0a88b0;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-info:focus, .btn-outline-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 136, 176, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-info.disabled, .btn-outline-info:disabled {
+  color: #0a88b0;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #0a88b0;
+  border-color: #0a88b0;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 136, 176, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-warning {
+  color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-warning:hover {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-warning:focus, .btn-outline-warning.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 180, 2, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-warning.disabled, .btn-outline-warning:disabled {
+  color: #ffb402;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: #212529;
+  background-color: #ffb402;
+  border-color: #ffb402;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-warning.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 180, 2, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-danger {
+  color: #ab1515;
+  border-color: #ab1515;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #ab1515;
+  border-color: #ab1515;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-danger:focus, .btn-outline-danger.focus {
+  box-shadow: 0 0 0 0.2rem rgba(171, 21, 21, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-danger.disabled, .btn-outline-danger:disabled {
+  color: #ab1515;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
+.show > .btn-outline-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #ab1515;
+  border-color: #ab1515;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-danger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(171, 21, 21, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-light:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-light:focus, .btn-outline-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-light.disabled, .btn-outline-light:disabled {
+  color: #f8f9fa;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+/* line 66, src/sass/bootstrap/_buttons.scss */
+.btn-outline-dark {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* line 71, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-dark:focus, .btn-outline-dark.focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+/* line 76, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-dark.disabled, .btn-outline-dark:disabled {
+  color: #343a40;
+  background-color: transparent;
+}
+
+/* line 82, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* line 89, src/sass/bootstrap/mixins/_buttons.scss */
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+/* line 77, src/sass/bootstrap/_buttons.scss */
+.btn-link {
+  font-weight: 400;
+  color: #ffb402;
+  text-decoration: none;
+}
+
+/* line 13, src/sass/bootstrap/mixins/_hover.scss */
+.btn-link:hover {
+  color: #b57f00;
+  text-decoration: none;
+}
+
+/* line 87, src/sass/bootstrap/_buttons.scss */
+.btn-link:focus, .btn-link.focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+/* line 93, src/sass/bootstrap/_buttons.scss */
+.btn-link:disabled, .btn-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+/* line 107, src/sass/bootstrap/_buttons.scss */
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+/* line 111, src/sass/bootstrap/_buttons.scss */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+/* line 120, src/sass/bootstrap/_buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 125, src/sass/bootstrap/_buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 0.5rem;
+}
+
+/* line 134, src/sass/bootstrap/_buttons.scss */
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+/* line 1, src/sass/bootstrap/_transitions.scss */
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 1, src/sass/bootstrap/_transitions.scss */
+  .fade {
+    transition: none;
+  }
+}
+
+/* line 4, src/sass/bootstrap/_transitions.scss */
+.fade:not(.show) {
+  opacity: 0;
+}
+
+/* line 10, src/sass/bootstrap/_transitions.scss */
+.collapse:not(.show) {
+  display: none;
+}
+
+/* line 15, src/sass/bootstrap/_transitions.scss */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 15, src/sass/bootstrap/_transitions.scss */
+  .collapsing {
+    transition: none;
+  }
+}
+
+/* line 14, src/sass/bootstrap/_carousel.scss */
+.carousel {
+  position: relative;
+}
+
+/* line 18, src/sass/bootstrap/_carousel.scss */
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+/* line 22, src/sass/bootstrap/_carousel.scss */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 2, src/sass/bootstrap/mixins/_clearfix.scss */
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* line 29, src/sass/bootstrap/_carousel.scss */
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 29, src/sass/bootstrap/_carousel.scss */
+  .carousel-item {
+    transition: none;
+  }
+}
+
+/* line 39, src/sass/bootstrap/_carousel.scss */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+/* line 45, src/sass/bootstrap/_carousel.scss */
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+/* line 50, src/sass/bootstrap/_carousel.scss */
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+/* line 61, src/sass/bootstrap/_carousel.scss */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
+
+/* line 67, src/sass/bootstrap/_carousel.scss */
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* line 74, src/sass/bootstrap/_carousel.scss */
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  z-index: 0;
+  opacity: 0;
+  transition: 0s 0.6s opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 74, src/sass/bootstrap/_carousel.scss */
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-right {
+    transition: none;
+  }
+}
+
+/* line 87, src/sass/bootstrap/_carousel.scss */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 87, src/sass/bootstrap/_carousel.scss */
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: none;
+  }
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+/* line 111, src/sass/bootstrap/_carousel.scss */
+.carousel-control-prev {
+  left: 0;
+}
+
+/* line 117, src/sass/bootstrap/_carousel.scss */
+.carousel-control-next {
+  right: 0;
+}
+
+/* line 125, src/sass/bootstrap/_carousel.scss */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50% / 100% 100%;
+}
+
+/* line 132, src/sass/bootstrap/_carousel.scss */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+/* line 135, src/sass/bootstrap/_carousel.scss */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+/* line 145, src/sass/bootstrap/_carousel.scss */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+/* line 159, src/sass/bootstrap/_carousel.scss */
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 159, src/sass/bootstrap/_carousel.scss */
+  .carousel-indicators li {
+    transition: none;
+  }
+}
+
+/* line 177, src/sass/bootstrap/_carousel.scss */
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* line 187, src/sass/bootstrap/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 3, src/sass/bootstrap/utilities/_align.scss */
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
+/* line 4, src/sass/bootstrap/utilities/_align.scss */
+.align-top {
+  vertical-align: top !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_align.scss */
+.align-middle {
+  vertical-align: middle !important;
+}
+
+/* line 6, src/sass/bootstrap/utilities/_align.scss */
+.align-bottom {
+  vertical-align: bottom !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_align.scss */
+.align-text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+/* line 8, src/sass/bootstrap/utilities/_align.scss */
+.align-text-top {
+  vertical-align: text-top !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-primary {
+  background-color: #3a0d5a !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #1d072d !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-secondary {
+  background-color: #ffb402 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #ce9100 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-success {
+  background-color: #4d7b1e !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-success:hover, a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #335214 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-info {
+  background-color: #0a88b0 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #076380 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-warning {
+  background-color: #ffb402 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-warning:hover, a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #ce9100 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-danger {
+  background-color: #ab1515 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-danger:hover, a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #7e0f0f !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_background-variant.scss */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
+
+/* line 13, src/sass/bootstrap/utilities/_background.scss */
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* line 17, src/sass/bootstrap/utilities/_background.scss */
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_borders.scss */
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+/* line 8, src/sass/bootstrap/utilities/_borders.scss */
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+/* line 9, src/sass/bootstrap/utilities/_borders.scss */
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+/* line 10, src/sass/bootstrap/utilities/_borders.scss */
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_borders.scss */
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+/* line 13, src/sass/bootstrap/utilities/_borders.scss */
+.border-0 {
+  border: 0 !important;
+}
+
+/* line 14, src/sass/bootstrap/utilities/_borders.scss */
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+/* line 15, src/sass/bootstrap/utilities/_borders.scss */
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_borders.scss */
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+/* line 17, src/sass/bootstrap/utilities/_borders.scss */
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-primary {
+  border-color: #3a0d5a !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-secondary {
+  border-color: #ffb402 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-success {
+  border-color: #4d7b1e !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-info {
+  border-color: #0a88b0 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-warning {
+  border-color: #ffb402 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-danger {
+  border-color: #ab1515 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-light {
+  border-color: #f8f9fa !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_borders.scss */
+.border-dark {
+  border-color: #343a40 !important;
+}
+
+/* line 25, src/sass/bootstrap/utilities/_borders.scss */
+.border-white {
+  border-color: #fff !important;
+}
+
+/* line 33, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-sm {
+  border-radius: 0.2rem !important;
+}
+
+/* line 37, src/sass/bootstrap/utilities/_borders.scss */
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+/* line 41, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-top {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+/* line 46, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+/* line 51, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-bottom {
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+/* line 56, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+/* line 61, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-lg {
+  border-radius: 0.3rem !important;
+}
+
+/* line 65, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+/* line 69, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+/* line 73, src/sass/bootstrap/utilities/_borders.scss */
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+/* line 2, src/sass/bootstrap/mixins/_clearfix.scss */
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-none {
+  display: none !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-inline {
+  display: inline !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-inline-block {
+  display: inline-block !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-block {
+  display: block !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-table {
+  display: table !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-table-row {
+  display: table-row !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-table-cell {
+  display: table-cell !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-flex {
+  display: flex !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_display.scss */
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+@media (min-width: 576px) {
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-none {
+    display: none !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-inline {
+    display: inline !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-inline-block {
+    display: inline-block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-block {
+    display: block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-table {
+    display: table !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-table-row {
+    display: table-row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-table-cell {
+    display: table-cell !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-flex {
+    display: flex !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-sm-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-none {
+    display: none !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-inline {
+    display: inline !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-inline-block {
+    display: inline-block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-block {
+    display: block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-table {
+    display: table !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-table-row {
+    display: table-row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-table-cell {
+    display: table-cell !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-flex {
+    display: flex !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-md-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-none {
+    display: none !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-inline {
+    display: inline !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-block {
+    display: block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-table {
+    display: table !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-table-row {
+    display: table-row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-table-cell {
+    display: table-cell !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-flex {
+    display: flex !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-lg-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-none {
+    display: none !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-inline {
+    display: inline !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-inline-block {
+    display: inline-block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-block {
+    display: block !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-table {
+    display: table !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-table-row {
+    display: table-row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-table-cell {
+    display: table-cell !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-flex {
+    display: flex !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_display.scss */
+  .d-xl-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media print {
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-none {
+    display: none !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-inline {
+    display: inline !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-block {
+    display: block !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-table {
+    display: table !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-flex {
+    display: flex !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_display.scss */
+  .d-print-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+/* line 3, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 10, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+/* line 15, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive-21by9::before {
+  padding-top: 42.85714%;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_embed.scss */
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_flex.scss */
+.flex-row {
+  flex-direction: row !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_flex.scss */
+.flex-column {
+  flex-direction: column !important;
+}
+
+/* line 13, src/sass/bootstrap/utilities/_flex.scss */
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+/* line 14, src/sass/bootstrap/utilities/_flex.scss */
+.flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_flex.scss */
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+/* line 17, src/sass/bootstrap/utilities/_flex.scss */
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+/* line 18, src/sass/bootstrap/utilities/_flex.scss */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
+/* line 19, src/sass/bootstrap/utilities/_flex.scss */
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_flex.scss */
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+/* line 21, src/sass/bootstrap/utilities/_flex.scss */
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+/* line 22, src/sass/bootstrap/utilities/_flex.scss */
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* line 23, src/sass/bootstrap/utilities/_flex.scss */
+.flex-shrink-1 {
+  flex-shrink: 1 !important;
+}
+
+/* line 25, src/sass/bootstrap/utilities/_flex.scss */
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+/* line 26, src/sass/bootstrap/utilities/_flex.scss */
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+/* line 27, src/sass/bootstrap/utilities/_flex.scss */
+.justify-content-center {
+  justify-content: center !important;
+}
+
+/* line 28, src/sass/bootstrap/utilities/_flex.scss */
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+/* line 29, src/sass/bootstrap/utilities/_flex.scss */
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+/* line 31, src/sass/bootstrap/utilities/_flex.scss */
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+/* line 32, src/sass/bootstrap/utilities/_flex.scss */
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+/* line 33, src/sass/bootstrap/utilities/_flex.scss */
+.align-items-center {
+  align-items: center !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_flex.scss */
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_flex.scss */
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+/* line 37, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-start {
+  align-content: flex-start !important;
+}
+
+/* line 38, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-end {
+  align-content: flex-end !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-center {
+  align-content: center !important;
+}
+
+/* line 40, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-between {
+  align-content: space-between !important;
+}
+
+/* line 41, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-around {
+  align-content: space-around !important;
+}
+
+/* line 42, src/sass/bootstrap/utilities/_flex.scss */
+.align-content-stretch {
+  align-content: stretch !important;
+}
+
+/* line 44, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-auto {
+  align-self: auto !important;
+}
+
+/* line 45, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-start {
+  align-self: flex-start !important;
+}
+
+/* line 46, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-end {
+  align-self: flex-end !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-center {
+  align-self: center !important;
+}
+
+/* line 48, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-baseline {
+  align-self: baseline !important;
+}
+
+/* line 49, src/sass/bootstrap/utilities/_flex.scss */
+.align-self-stretch {
+  align-self: stretch !important;
+}
+
+@media (min-width: 576px) {
+  /* line 11, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-sm-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-sm-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-sm-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-sm-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-sm-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-sm-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-sm-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-sm-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-sm-center {
+    align-items: center !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-sm-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-sm-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-center {
+    align-content: center !important;
+  }
+  /* line 40, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-sm-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-center {
+    align-self: center !important;
+  }
+  /* line 48, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-sm-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-md-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-md-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-md-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-md-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-md-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-md-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-md-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-md-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-md-center {
+    align-items: center !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-md-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-md-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-center {
+    align-content: center !important;
+  }
+  /* line 40, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-md-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-center {
+    align-self: center !important;
+  }
+  /* line 48, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-md-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-lg-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-lg-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-lg-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-lg-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-lg-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-lg-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-lg-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-lg-center {
+    align-items: center !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-lg-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-lg-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-center {
+    align-content: center !important;
+  }
+  /* line 40, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-lg-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-center {
+    align-self: center !important;
+  }
+  /* line 48, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-lg-stretch {
+    align-self: stretch !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 11, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-row {
+    flex-direction: row !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-column {
+    flex-direction: column !important;
+  }
+  /* line 13, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  /* line 14, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-wrap {
+    flex-wrap: wrap !important;
+  }
+  /* line 17, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  /* line 18, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  /* line 19, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-fill {
+    flex: 1 1 auto !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-grow-0 {
+    flex-grow: 0 !important;
+  }
+  /* line 21, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-grow-1 {
+    flex-grow: 1 !important;
+  }
+  /* line 22, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_flex.scss */
+  .flex-xl-shrink-1 {
+    flex-shrink: 1 !important;
+  }
+  /* line 25, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-xl-start {
+    justify-content: flex-start !important;
+  }
+  /* line 26, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-xl-end {
+    justify-content: flex-end !important;
+  }
+  /* line 27, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-xl-center {
+    justify-content: center !important;
+  }
+  /* line 28, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-xl-between {
+    justify-content: space-between !important;
+  }
+  /* line 29, src/sass/bootstrap/utilities/_flex.scss */
+  .justify-content-xl-around {
+    justify-content: space-around !important;
+  }
+  /* line 31, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-xl-start {
+    align-items: flex-start !important;
+  }
+  /* line 32, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-xl-end {
+    align-items: flex-end !important;
+  }
+  /* line 33, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-xl-center {
+    align-items: center !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-xl-baseline {
+    align-items: baseline !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_flex.scss */
+  .align-items-xl-stretch {
+    align-items: stretch !important;
+  }
+  /* line 37, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-start {
+    align-content: flex-start !important;
+  }
+  /* line 38, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-end {
+    align-content: flex-end !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-center {
+    align-content: center !important;
+  }
+  /* line 40, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-between {
+    align-content: space-between !important;
+  }
+  /* line 41, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-around {
+    align-content: space-around !important;
+  }
+  /* line 42, src/sass/bootstrap/utilities/_flex.scss */
+  .align-content-xl-stretch {
+    align-content: stretch !important;
+  }
+  /* line 44, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-auto {
+    align-self: auto !important;
+  }
+  /* line 45, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-start {
+    align-self: flex-start !important;
+  }
+  /* line 46, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-end {
+    align-self: flex-end !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-center {
+    align-self: center !important;
+  }
+  /* line 48, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-baseline {
+    align-self: baseline !important;
+  }
+  /* line 49, src/sass/bootstrap/utilities/_flex.scss */
+  .align-self-xl-stretch {
+    align-self: stretch !important;
+  }
+}
+
+/* line 7, src/sass/bootstrap/utilities/_float.scss */
+.float-left {
+  float: left !important;
+}
+
+/* line 8, src/sass/bootstrap/utilities/_float.scss */
+.float-right {
+  float: right !important;
+}
+
+/* line 9, src/sass/bootstrap/utilities/_float.scss */
+.float-none {
+  float: none !important;
+}
+
+@media (min-width: 576px) {
+  /* line 7, src/sass/bootstrap/utilities/_float.scss */
+  .float-sm-left {
+    float: left !important;
+  }
+  /* line 8, src/sass/bootstrap/utilities/_float.scss */
+  .float-sm-right {
+    float: right !important;
+  }
+  /* line 9, src/sass/bootstrap/utilities/_float.scss */
+  .float-sm-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 7, src/sass/bootstrap/utilities/_float.scss */
+  .float-md-left {
+    float: left !important;
+  }
+  /* line 8, src/sass/bootstrap/utilities/_float.scss */
+  .float-md-right {
+    float: right !important;
+  }
+  /* line 9, src/sass/bootstrap/utilities/_float.scss */
+  .float-md-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 7, src/sass/bootstrap/utilities/_float.scss */
+  .float-lg-left {
+    float: left !important;
+  }
+  /* line 8, src/sass/bootstrap/utilities/_float.scss */
+  .float-lg-right {
+    float: right !important;
+  }
+  /* line 9, src/sass/bootstrap/utilities/_float.scss */
+  .float-lg-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 7, src/sass/bootstrap/utilities/_float.scss */
+  .float-xl-left {
+    float: left !important;
+  }
+  /* line 8, src/sass/bootstrap/utilities/_float.scss */
+  .float-xl-right {
+    float: right !important;
+  }
+  /* line 9, src/sass/bootstrap/utilities/_float.scss */
+  .float-xl-none {
+    float: none !important;
+  }
+}
+
+/* line 4, src/sass/bootstrap/utilities/_overflow.scss */
+.overflow-auto {
+  overflow: auto !important;
+}
+
+/* line 4, src/sass/bootstrap/utilities/_overflow.scss */
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_position.scss */
+.position-static {
+  position: static !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_position.scss */
+.position-relative {
+  position: relative !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_position.scss */
+.position-absolute {
+  position: absolute !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_position.scss */
+.position-fixed {
+  position: fixed !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_position.scss */
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+/* line 10, src/sass/bootstrap/utilities/_position.scss */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* line 18, src/sass/bootstrap/utilities/_position.scss */
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  /* line 26, src/sass/bootstrap/utilities/_position.scss */
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+/* line 5, src/sass/bootstrap/utilities/_screenreaders.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* line 24, src/sass/bootstrap/mixins/_screen-reader.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* line 3, src/sass/bootstrap/utilities/_shadows.scss */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* line 4, src/sass/bootstrap/utilities/_shadows.scss */
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* line 5, src/sass/bootstrap/utilities/_shadows.scss */
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* line 6, src/sass/bootstrap/utilities/_shadows.scss */
+.shadow-none {
+  box-shadow: none !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.w-25 {
+  width: 25% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.w-50 {
+  width: 50% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.w-75 {
+  width: 75% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.w-100 {
+  width: 100% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.w-auto {
+  width: auto !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.h-25 {
+  height: 25% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.h-50 {
+  height: 50% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.h-75 {
+  height: 75% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.h-100 {
+  height: 100% !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_sizing.scss */
+.h-auto {
+  height: auto !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_sizing.scss */
+.mw-100 {
+  max-width: 100% !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_sizing.scss */
+.mh-100 {
+  max-height: 100% !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_sizing.scss */
+.min-vw-100 {
+  min-width: 100vw !important;
+}
+
+/* line 17, src/sass/bootstrap/utilities/_sizing.scss */
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+/* line 19, src/sass/bootstrap/utilities/_sizing.scss */
+.vw-100 {
+  width: 100vw !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_sizing.scss */
+.vh-100 {
+  height: 100vh !important;
+}
+
+/* line 6, src/sass/bootstrap/utilities/_stretched-link.scss */
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-0 {
+  margin: 0 !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-0,
+.my-0 {
+  margin-top: 0 !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-0,
+.mx-0 {
+  margin-right: 0 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-3 {
+  margin: 1rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-3,
+.mx-3 {
+  margin-left: 1rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-4,
+.mx-4 {
+  margin-right: 1.5rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-4,
+.mx-4 {
+  margin-left: 1.5rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.m-5 {
+  margin: 3rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-5,
+.my-5 {
+  margin-top: 3rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-5,
+.mx-5 {
+  margin-right: 3rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-5,
+.mx-5 {
+  margin-left: 3rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-0 {
+  padding: 0 !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-1,
+.px-1 {
+  padding-right: 0.25rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-1,
+.px-1 {
+  padding-left: 0.25rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-2,
+.px-2 {
+  padding-left: 0.5rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-3 {
+  padding: 1rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+.p-5 {
+  padding: 3rem !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+/* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+.pr-5,
+.px-5 {
+  padding-right: 3rem !important;
+}
+
+/* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+.pl-5,
+.px-5 {
+  padding-left: 3rem !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+.m-n1 {
+  margin: -0.25rem !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-n1,
+.my-n1 {
+  margin-top: -0.25rem !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-n1,
+.mx-n1 {
+  margin-right: -0.25rem !important;
+}
+
+/* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-n1,
+.my-n1 {
+  margin-bottom: -0.25rem !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-n1,
+.mx-n1 {
+  margin-left: -0.25rem !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+.m-n2 {
+  margin: -0.5rem !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-n2,
+.my-n2 {
+  margin-top: -0.5rem !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-n2,
+.mx-n2 {
+  margin-right: -0.5rem !important;
+}
+
+/* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-n2,
+.my-n2 {
+  margin-bottom: -0.5rem !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-n2,
+.mx-n2 {
+  margin-left: -0.5rem !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+.m-n3 {
+  margin: -1rem !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-n3,
+.my-n3 {
+  margin-top: -1rem !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-n3,
+.mx-n3 {
+  margin-right: -1rem !important;
+}
+
+/* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-n3,
+.my-n3 {
+  margin-bottom: -1rem !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-n3,
+.mx-n3 {
+  margin-left: -1rem !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+.m-n4 {
+  margin: -1.5rem !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-n4,
+.my-n4 {
+  margin-top: -1.5rem !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-n4,
+.mx-n4 {
+  margin-right: -1.5rem !important;
+}
+
+/* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-n4,
+.my-n4 {
+  margin-bottom: -1.5rem !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-n4,
+.mx-n4 {
+  margin-left: -1.5rem !important;
+}
+
+/* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+.m-n5 {
+  margin: -3rem !important;
+}
+
+/* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-n5,
+.my-n5 {
+  margin-top: -3rem !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-n5,
+.mx-n5 {
+  margin-right: -3rem !important;
+}
+
+/* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-n5,
+.my-n5 {
+  margin-bottom: -3rem !important;
+}
+
+/* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-n5,
+.mx-n5 {
+  margin-left: -3rem !important;
+}
+
+/* line 55, src/sass/bootstrap/utilities/_spacing.scss */
+.m-auto {
+  margin: auto !important;
+}
+
+/* line 56, src/sass/bootstrap/utilities/_spacing.scss */
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+
+/* line 60, src/sass/bootstrap/utilities/_spacing.scss */
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+/* line 64, src/sass/bootstrap/utilities/_spacing.scss */
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+
+/* line 68, src/sass/bootstrap/utilities/_spacing.scss */
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-0,
+  .my-sm-0 {
+    margin-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-0,
+  .mx-sm-0 {
+    margin-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-0,
+  .my-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-0,
+  .mx-sm-0 {
+    margin-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-1,
+  .my-sm-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-1,
+  .mx-sm-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-1,
+  .my-sm-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-1,
+  .mx-sm-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-2,
+  .my-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-2,
+  .mx-sm-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-2,
+  .my-sm-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-2,
+  .mx-sm-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-3 {
+    margin: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-3,
+  .my-sm-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-3,
+  .mx-sm-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-3,
+  .my-sm-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-3,
+  .mx-sm-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-4,
+  .my-sm-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-4,
+  .mx-sm-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-4,
+  .my-sm-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-4,
+  .mx-sm-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-5 {
+    margin: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-5,
+  .my-sm-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-5,
+  .mx-sm-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-5,
+  .my-sm-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-5,
+  .mx-sm-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-0,
+  .py-sm-0 {
+    padding-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-0,
+  .px-sm-0 {
+    padding-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-0,
+  .py-sm-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-0,
+  .px-sm-0 {
+    padding-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-1,
+  .py-sm-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-1,
+  .px-sm-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-1,
+  .py-sm-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-1,
+  .px-sm-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-2,
+  .py-sm-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-2,
+  .px-sm-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-2,
+  .py-sm-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-2,
+  .px-sm-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-3 {
+    padding: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-3,
+  .py-sm-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-3,
+  .px-sm-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-3,
+  .py-sm-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-3,
+  .px-sm-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-4,
+  .py-sm-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-4,
+  .px-sm-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-4,
+  .py-sm-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-4,
+  .px-sm-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-sm-5 {
+    padding: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-sm-5,
+  .py-sm-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-sm-5,
+  .px-sm-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-sm-5,
+  .py-sm-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-sm-5,
+  .px-sm-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-n1,
+  .my-sm-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-n1,
+  .mx-sm-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-n1,
+  .my-sm-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-n1,
+  .mx-sm-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-n2,
+  .my-sm-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-n2,
+  .mx-sm-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-n2,
+  .my-sm-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-n2,
+  .mx-sm-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-n3 {
+    margin: -1rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-n3,
+  .my-sm-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-n3,
+  .mx-sm-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-n3,
+  .my-sm-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-n3,
+  .mx-sm-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-n4,
+  .my-sm-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-n4,
+  .mx-sm-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-n4,
+  .my-sm-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-n4,
+  .mx-sm-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-n5 {
+    margin: -3rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-n5,
+  .my-sm-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-n5,
+  .mx-sm-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-n5,
+  .my-sm-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-n5,
+  .mx-sm-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 55, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-sm-auto {
+    margin: auto !important;
+  }
+  /* line 56, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-sm-auto,
+  .my-sm-auto {
+    margin-top: auto !important;
+  }
+  /* line 60, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-sm-auto,
+  .mx-sm-auto {
+    margin-right: auto !important;
+  }
+  /* line 64, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-sm-auto,
+  .my-sm-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 68, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-sm-auto,
+  .mx-sm-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-0 {
+    margin: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-0,
+  .my-md-0 {
+    margin-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-0,
+  .mx-md-0 {
+    margin-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-0,
+  .my-md-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-0,
+  .mx-md-0 {
+    margin-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-1,
+  .my-md-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-1,
+  .mx-md-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-1,
+  .my-md-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-1,
+  .mx-md-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-2,
+  .my-md-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-2,
+  .mx-md-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-2,
+  .my-md-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-2,
+  .mx-md-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-3 {
+    margin: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-3,
+  .my-md-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-3,
+  .mx-md-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-3,
+  .my-md-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-3,
+  .mx-md-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-4,
+  .my-md-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-4,
+  .mx-md-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-4,
+  .my-md-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-4,
+  .mx-md-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-5 {
+    margin: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-5,
+  .my-md-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-5,
+  .mx-md-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-5,
+  .my-md-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-5,
+  .mx-md-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-0 {
+    padding: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-0,
+  .py-md-0 {
+    padding-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-0,
+  .px-md-0 {
+    padding-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-0,
+  .py-md-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-0,
+  .px-md-0 {
+    padding-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-1,
+  .py-md-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-1,
+  .px-md-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-1,
+  .py-md-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-1,
+  .px-md-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-2,
+  .py-md-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-2,
+  .px-md-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-2,
+  .py-md-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-2,
+  .px-md-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-3 {
+    padding: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-3,
+  .py-md-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-3,
+  .px-md-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-3,
+  .py-md-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-3,
+  .px-md-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-4,
+  .py-md-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-4,
+  .px-md-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-4,
+  .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-4,
+  .px-md-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-md-5 {
+    padding: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-md-5,
+  .py-md-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-md-5,
+  .px-md-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-md-5,
+  .py-md-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-md-5,
+  .px-md-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-n1,
+  .my-md-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-n1,
+  .mx-md-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-n1,
+  .my-md-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-n1,
+  .mx-md-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-n2,
+  .my-md-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-n2,
+  .mx-md-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-n2,
+  .my-md-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-n2,
+  .mx-md-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-n3 {
+    margin: -1rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-n3,
+  .my-md-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-n3,
+  .mx-md-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-n3,
+  .my-md-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-n3,
+  .mx-md-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-n4,
+  .my-md-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-n4,
+  .mx-md-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-n4,
+  .my-md-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-n4,
+  .mx-md-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-n5 {
+    margin: -3rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-n5,
+  .my-md-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-n5,
+  .mx-md-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-n5,
+  .my-md-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-n5,
+  .mx-md-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 55, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-md-auto {
+    margin: auto !important;
+  }
+  /* line 56, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-md-auto,
+  .my-md-auto {
+    margin-top: auto !important;
+  }
+  /* line 60, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-md-auto,
+  .mx-md-auto {
+    margin-right: auto !important;
+  }
+  /* line 64, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-md-auto,
+  .my-md-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 68, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-md-auto,
+  .mx-md-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-0 {
+    margin: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-0,
+  .my-lg-0 {
+    margin-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-0,
+  .mx-lg-0 {
+    margin-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-0,
+  .my-lg-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-0,
+  .mx-lg-0 {
+    margin-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-1,
+  .my-lg-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-1,
+  .mx-lg-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-1,
+  .my-lg-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-1,
+  .mx-lg-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-2,
+  .my-lg-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-2,
+  .mx-lg-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-2,
+  .my-lg-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-2,
+  .mx-lg-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-3 {
+    margin: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-3,
+  .my-lg-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-3,
+  .mx-lg-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-3,
+  .my-lg-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-3,
+  .mx-lg-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-4,
+  .my-lg-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-4,
+  .mx-lg-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-4,
+  .my-lg-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-4,
+  .mx-lg-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-5 {
+    margin: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-5,
+  .my-lg-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-5,
+  .mx-lg-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-5,
+  .my-lg-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-5,
+  .mx-lg-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-0 {
+    padding: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-0,
+  .py-lg-0 {
+    padding-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-0,
+  .px-lg-0 {
+    padding-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-0,
+  .py-lg-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-0,
+  .px-lg-0 {
+    padding-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-1,
+  .py-lg-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-1,
+  .px-lg-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-1,
+  .py-lg-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-1,
+  .px-lg-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-2,
+  .py-lg-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-2,
+  .px-lg-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-2,
+  .py-lg-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-2,
+  .px-lg-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-3 {
+    padding: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-3,
+  .py-lg-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-3,
+  .px-lg-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-3,
+  .py-lg-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-3,
+  .px-lg-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-4,
+  .py-lg-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-4,
+  .px-lg-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-4,
+  .py-lg-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-4,
+  .px-lg-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-lg-5 {
+    padding: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-lg-5,
+  .py-lg-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-lg-5,
+  .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-lg-5,
+  .py-lg-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-n1,
+  .my-lg-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-n1,
+  .mx-lg-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-n1,
+  .my-lg-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-n1,
+  .mx-lg-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-n2,
+  .my-lg-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-n2,
+  .mx-lg-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-n2,
+  .my-lg-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-n2,
+  .mx-lg-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-n3 {
+    margin: -1rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-n3,
+  .my-lg-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-n3,
+  .mx-lg-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-n3,
+  .my-lg-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-n3,
+  .mx-lg-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-n4,
+  .my-lg-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-n4,
+  .mx-lg-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-n4,
+  .my-lg-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-n4,
+  .mx-lg-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-n5 {
+    margin: -3rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-n5,
+  .my-lg-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-n5,
+  .mx-lg-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-n5,
+  .my-lg-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-n5,
+  .mx-lg-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 55, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-lg-auto {
+    margin: auto !important;
+  }
+  /* line 56, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-lg-auto,
+  .my-lg-auto {
+    margin-top: auto !important;
+  }
+  /* line 60, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-lg-auto,
+  .mx-lg-auto {
+    margin-right: auto !important;
+  }
+  /* line 64, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-lg-auto,
+  .my-lg-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 68, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-0 {
+    margin: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-0,
+  .my-xl-0 {
+    margin-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-0,
+  .mx-xl-0 {
+    margin-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-0,
+  .my-xl-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-0,
+  .mx-xl-0 {
+    margin-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-1,
+  .my-xl-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-1,
+  .mx-xl-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-1,
+  .my-xl-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-1,
+  .mx-xl-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-2,
+  .my-xl-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-2,
+  .mx-xl-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-2,
+  .my-xl-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-2,
+  .mx-xl-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-3 {
+    margin: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-3,
+  .my-xl-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-3,
+  .mx-xl-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-3,
+  .my-xl-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-3,
+  .mx-xl-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-4,
+  .my-xl-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-4,
+  .mx-xl-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-4,
+  .my-xl-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-4,
+  .mx-xl-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-5 {
+    margin: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-5,
+  .my-xl-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-5,
+  .mx-xl-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-5,
+  .my-xl-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-5,
+  .mx-xl-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-0 {
+    padding: 0 !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-0,
+  .py-xl-0 {
+    padding-top: 0 !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-0,
+  .px-xl-0 {
+    padding-right: 0 !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-0,
+  .py-xl-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-0,
+  .px-xl-0 {
+    padding-left: 0 !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-1,
+  .py-xl-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-1,
+  .px-xl-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-1,
+  .py-xl-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-1,
+  .px-xl-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-2,
+  .py-xl-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-2,
+  .px-xl-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-2,
+  .py-xl-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-2,
+  .px-xl-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-3 {
+    padding: 1rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-3,
+  .py-xl-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-3,
+  .px-xl-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-3,
+  .py-xl-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-3,
+  .px-xl-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-4,
+  .py-xl-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-4,
+  .px-xl-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-4,
+  .py-xl-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-4,
+  .px-xl-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 11, src/sass/bootstrap/utilities/_spacing.scss */
+  .p-xl-5 {
+    padding: 3rem !important;
+  }
+  /* line 12, src/sass/bootstrap/utilities/_spacing.scss */
+  .pt-xl-5,
+  .py-xl-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 16, src/sass/bootstrap/utilities/_spacing.scss */
+  .pr-xl-5,
+  .px-xl-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 20, src/sass/bootstrap/utilities/_spacing.scss */
+  .pb-xl-5,
+  .py-xl-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_spacing.scss */
+  .pl-xl-5,
+  .px-xl-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-n1 {
+    margin: -0.25rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-n1,
+  .my-xl-n1 {
+    margin-top: -0.25rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-n1,
+  .mx-xl-n1 {
+    margin-right: -0.25rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-n1,
+  .my-xl-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-n1,
+  .mx-xl-n1 {
+    margin-left: -0.25rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-n2 {
+    margin: -0.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-n2,
+  .my-xl-n2 {
+    margin-top: -0.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-n2,
+  .mx-xl-n2 {
+    margin-right: -0.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-n2,
+  .my-xl-n2 {
+    margin-bottom: -0.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-n2,
+  .mx-xl-n2 {
+    margin-left: -0.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-n3 {
+    margin: -1rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-n3,
+  .my-xl-n3 {
+    margin-top: -1rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-n3,
+  .mx-xl-n3 {
+    margin-right: -1rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-n3,
+  .my-xl-n3 {
+    margin-bottom: -1rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-n3,
+  .mx-xl-n3 {
+    margin-left: -1rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-n4 {
+    margin: -1.5rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-n4,
+  .my-xl-n4 {
+    margin-top: -1.5rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-n4,
+  .mx-xl-n4 {
+    margin-right: -1.5rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-n4,
+  .my-xl-n4 {
+    margin-bottom: -1.5rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-n4,
+  .mx-xl-n4 {
+    margin-left: -1.5rem !important;
+  }
+  /* line 34, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-n5 {
+    margin: -3rem !important;
+  }
+  /* line 35, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-n5,
+  .my-xl-n5 {
+    margin-top: -3rem !important;
+  }
+  /* line 39, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-n5,
+  .mx-xl-n5 {
+    margin-right: -3rem !important;
+  }
+  /* line 43, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-n5,
+  .my-xl-n5 {
+    margin-bottom: -3rem !important;
+  }
+  /* line 47, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-n5,
+  .mx-xl-n5 {
+    margin-left: -3rem !important;
+  }
+  /* line 55, src/sass/bootstrap/utilities/_spacing.scss */
+  .m-xl-auto {
+    margin: auto !important;
+  }
+  /* line 56, src/sass/bootstrap/utilities/_spacing.scss */
+  .mt-xl-auto,
+  .my-xl-auto {
+    margin-top: auto !important;
+  }
+  /* line 60, src/sass/bootstrap/utilities/_spacing.scss */
+  .mr-xl-auto,
+  .mx-xl-auto {
+    margin-right: auto !important;
+  }
+  /* line 64, src/sass/bootstrap/utilities/_spacing.scss */
+  .mb-xl-auto,
+  .my-xl-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 68, src/sass/bootstrap/utilities/_spacing.scss */
+  .ml-xl-auto,
+  .mx-xl-auto {
+    margin-left: auto !important;
+  }
+}
+
+/* line 7, src/sass/bootstrap/utilities/_text.scss */
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_text.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* line 12, src/sass/bootstrap/utilities/_text.scss */
+.text-wrap {
+  white-space: normal !important;
+}
+
+/* line 13, src/sass/bootstrap/utilities/_text.scss */
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+/* line 14, src/sass/bootstrap/utilities/_text.scss */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 22, src/sass/bootstrap/utilities/_text.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 23, src/sass/bootstrap/utilities/_text.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 24, src/sass/bootstrap/utilities/_text.scss */
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  /* line 22, src/sass/bootstrap/utilities/_text.scss */
+  .text-sm-left {
+    text-align: left !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_text.scss */
+  .text-sm-right {
+    text-align: right !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_text.scss */
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 22, src/sass/bootstrap/utilities/_text.scss */
+  .text-md-left {
+    text-align: left !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_text.scss */
+  .text-md-right {
+    text-align: right !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_text.scss */
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 22, src/sass/bootstrap/utilities/_text.scss */
+  .text-lg-left {
+    text-align: left !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_text.scss */
+  .text-lg-right {
+    text-align: right !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_text.scss */
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* line 22, src/sass/bootstrap/utilities/_text.scss */
+  .text-xl-left {
+    text-align: left !important;
+  }
+  /* line 23, src/sass/bootstrap/utilities/_text.scss */
+  .text-xl-right {
+    text-align: right !important;
+  }
+  /* line 24, src/sass/bootstrap/utilities/_text.scss */
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+/* line 30, src/sass/bootstrap/utilities/_text.scss */
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+/* line 31, src/sass/bootstrap/utilities/_text.scss */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+/* line 32, src/sass/bootstrap/utilities/_text.scss */
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* line 36, src/sass/bootstrap/utilities/_text.scss */
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+/* line 37, src/sass/bootstrap/utilities/_text.scss */
+.font-weight-lighter {
+  font-weight: lighter !important;
+}
+
+/* line 38, src/sass/bootstrap/utilities/_text.scss */
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+/* line 39, src/sass/bootstrap/utilities/_text.scss */
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+/* line 40, src/sass/bootstrap/utilities/_text.scss */
+.font-weight-bolder {
+  font-weight: bolder !important;
+}
+
+/* line 41, src/sass/bootstrap/utilities/_text.scss */
+.font-italic {
+  font-style: italic !important;
+}
+
+/* line 45, src/sass/bootstrap/utilities/_text.scss */
+.text-white {
+  color: #fff !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-primary {
+  color: #3a0d5a !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-primary:hover, a.text-primary:focus {
+  color: #0f0317 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-secondary {
+  color: #ffb402 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #b57f00 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-success {
+  color: #4d7b1e !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-success:hover, a.text-success:focus {
+  color: #273e0f !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-info {
+  color: #0a88b0 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-info:hover, a.text-info:focus {
+  color: #065068 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-warning {
+  color: #ffb402 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-warning:hover, a.text-warning:focus {
+  color: #b57f00 !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-danger {
+  color: #ab1515 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-danger:hover, a.text-danger:focus {
+  color: #670d0d !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-light {
+  color: #f8f9fa !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-light:hover, a.text-light:focus {
+  color: #cbd3da !important;
+}
+
+/* line 6, src/sass/bootstrap/mixins/_text-emphasis.scss */
+.text-dark {
+  color: #343a40 !important;
+}
+
+/* line 17, src/sass/bootstrap/mixins/_hover.scss */
+a.text-dark:hover, a.text-dark:focus {
+  color: #121416 !important;
+}
+
+/* line 51, src/sass/bootstrap/utilities/_text.scss */
+.text-body {
+  color: #212529 !important;
+}
+
+/* line 52, src/sass/bootstrap/utilities/_text.scss */
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* line 54, src/sass/bootstrap/utilities/_text.scss */
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 55, src/sass/bootstrap/utilities/_text.scss */
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 59, src/sass/bootstrap/utilities/_text.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 63, src/sass/bootstrap/utilities/_text.scss */
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* line 65, src/sass/bootstrap/utilities/_text.scss */
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* line 72, src/sass/bootstrap/utilities/_text.scss */
+.text-reset {
+  color: inherit !important;
+}
+
+/* line 7, src/sass/bootstrap/utilities/_visibility.scss */
+.visible {
+  visibility: visible !important;
+}
+
+/* line 11, src/sass/bootstrap/utilities/_visibility.scss */
+.invisible {
+  visibility: hidden !important;
+}
+
+@media print {
+  /* line 13, src/sass/bootstrap/_print.scss */
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  /* line 24, src/sass/bootstrap/_print.scss */
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+  /* line 34, src/sass/bootstrap/_print.scss */
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /* line 49, src/sass/bootstrap/_print.scss */
+  pre {
+    white-space: pre-wrap !important;
+  }
+  /* line 52, src/sass/bootstrap/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #adb5bd;
+    page-break-inside: avoid;
+  }
+  /* line 63, src/sass/bootstrap/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+  /* line 67, src/sass/bootstrap/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  /* line 72, src/sass/bootstrap/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 79, src/sass/bootstrap/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  @page {
+    size: a3;
+  }
+  /* line 92, src/sass/bootstrap/_print.scss */
+  body {
+    min-width: 992px !important;
+  }
+  /* line 95, src/sass/bootstrap/_print.scss */
+  .container {
+    min-width: 992px !important;
+  }
+  /* line 100, src/sass/bootstrap/_print.scss */
+  .navbar {
+    display: none;
+  }
+  /* line 103, src/sass/bootstrap/_print.scss */
+  .badge {
+    border: 1px solid #000;
+  }
+  /* line 107, src/sass/bootstrap/_print.scss */
+  .table {
+    border-collapse: collapse !important;
+  }
+  /* line 110, src/sass/bootstrap/_print.scss */
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  /* line 117, src/sass/bootstrap/_print.scss */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6 !important;
+  }
+  /* line 123, src/sass/bootstrap/_print.scss */
+  .table-dark {
+    color: inherit;
+  }
+  /* line 126, src/sass/bootstrap/_print.scss */
+  .table-dark th,
+  .table-dark td,
+  .table-dark thead th,
+  .table-dark tbody + tbody {
+    border-color: #dee2e6;
+  }
+  /* line 134, src/sass/bootstrap/_print.scss */
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #dee2e6;
+  }
+}
+
+/* line 6, src/sass/app/base.scss */
+body {
+  background-color: #3a0d5a;
+  color: #fff;
+  cursor: default;
+}
+
+/* line 12, src/sass/app/base.scss */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* line 17, src/sass/app/base.scss */
+p {
+  font-size: 1.4rem;
+}
+
+/* line 23, src/sass/app/base.scss */
+.highlight {
+  color: #ffb402;
+}
+
+/* line 29, src/sass/app/base.scss */
+.section-wrapper {
+  padding: 0 6.4rem;
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  /* line 29, src/sass/app/base.scss */
+  .section-wrapper {
+    padding: 0 1.4rem;
+  }
+}
+
+/* line 39, src/sass/app/base.scss */
+.section-inner {
+  position: relative;
+  height: 100%;
+  border-left: 0.1rem solid rgba(255, 255, 255, 0.05);
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.05);
+}
+
+/* line 45, src/sass/app/base.scss */
+.section-inner:before {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  margin-left: -25%;
+  border-left: 0.1rem solid rgba(255, 255, 255, 0.05);
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.05);
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* line 59, src/sass/app/base.scss */
+.section-inner:after {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  width: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  /* line 75, src/sass/app/base.scss */
+  .header-wrapper {
+    padding: 8rem 0;
+    width: 40%;
+    min-width: 44rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 75, src/sass/app/base.scss */
+  .header-wrapper {
+    padding: 3rem 0;
+  }
+}
+
+/* line 86, src/sass/app/base.scss */
+.header-wrapper .header-subject {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffb402;
+}
+
+@media (max-width: 767.98px) {
+  /* line 86, src/sass/app/base.scss */
+  .header-wrapper .header-subject {
+    font-size: 1rem;
+  }
+}
+
+/* line 98, src/sass/app/base.scss */
+.header-wrapper .header-main {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  /* line 98, src/sass/app/base.scss */
+  .header-wrapper .header-main {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 107, src/sass/app/base.scss */
+.header-wrapper .header-desc {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  /* line 107, src/sass/app/base.scss */
+  .header-wrapper .header-desc {
+    font-size: 1rem;
+  }
+}
+
+/* line 116, src/sass/app/base.scss */
+.section-list {
+  text-transform: uppercase;
+  line-height: 2.4;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* line 124, src/sass/app/base.scss */
+.btn-outline {
+  display: inline-block;
+  border: 4px solid #ffb402;
+  padding: 8px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 131, src/sass/app/base.scss */
+.btn-outline i {
+  margin-left: 1em;
+}
+
+/* line 1, src/sass/app/hero.scss */
+.hero {
+  position: relative;
+}
+
+/* line 4, src/sass/app/hero.scss */
+.hero .section-inner {
+  height: 100vh;
+}
+
+/* line 8, src/sass/app/hero.scss */
+.hero .hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+}
+
+/* line 21, src/sass/app/hero.scss */
+.hero .headline {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+/* line 25, src/sass/app/hero.scss */
+.hero .headline h2 {
+  font-family: "Russo One", sans-serif;
+  font-weight: initial;
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin-left: -0.4rem;
+  margin-bottom: 1.75rem;
+  line-height: 1;
+}
+
+@media (min-width: 576px) and (max-width: 1280.98px) {
+  /* line 25, src/sass/app/hero.scss */
+  .hero .headline h2 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 25, src/sass/app/hero.scss */
+  .hero .headline h2 {
+    font-size: 3.25rem;
+  }
+}
+
+/* line 43, src/sass/app/hero.scss */
+.hero .headline h1,
+.hero .headline h3 {
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (min-width: 576px) and (max-width: 1280.98px) {
+  /* line 43, src/sass/app/hero.scss */
+  .hero .headline h1,
+  .hero .headline h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 43, src/sass/app/hero.scss */
+  .hero .headline h1,
+  .hero .headline h3 {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+/* line 59, src/sass/app/hero.scss */
+.hero .headline h3 span {
+  color: #ffb402;
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  /* line 59, src/sass/app/hero.scss */
+  .hero .headline h3 span {
+    display: block;
+    min-height: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* line 70, src/sass/app/hero.scss */
+.hero .headline .btn-outline {
+  margin: 2.5em 0;
+}
+
+@keyframes mouse-scroll {
+  0% {
+    top: 20%;
+  }
+  40% {
+    top: 30%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+
+/* line 92, src/sass/app/hero.scss */
+.scroll-mouse {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  /* line 92, src/sass/app/hero.scss */
+  .scroll-mouse {
+    display: none;
+  }
+}
+
+/* line 102, src/sass/app/hero.scss */
+.scroll-mouse .inner {
+  margin: 0 auto;
+  width: 1.5rem;
+  height: 2.5rem;
+  position: relative;
+  border-radius: 1rem;
+  border: 0.125rem solid #fff;
+}
+
+/* line 111, src/sass/app/hero.scss */
+.scroll-mouse .wheel {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 0.25rem;
+  height: 0.5rem;
+  margin-left: -0.125rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  animation: mouse-scroll 0.9s ease-in infinite;
+}
+
+/* line 126, src/sass/app/hero.scss */
+.hero-layover {
+  top: 0;
+  bottom: 0;
+  width: 6.4rem;
+  display: flex;
+}
+
+/* line 132, src/sass/app/hero.scss */
+.hero-layover.layover-left {
+  position: absolute;
+  left: 0;
+  align-items: center;
+  justify-items: center;
+  background-color: #93104f;
+  z-index: -1;
+}
+
+/* line 141, src/sass/app/hero.scss */
+.hero-layover.layover-right {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  /* line 141, src/sass/app/hero.scss */
+  .hero-layover.layover-right {
+    transition: background-color 0.3s ease-out;
+    height: 100%;
+    width: 6.4rem;
+  }
+  /* line 154, src/sass/app/hero.scss */
+  .hero-layover.layover-right:hover {
+    background-color: #222;
+  }
+}
+
+/* line 164, src/sass/app/hero.scss */
+.brand .logo {
+  height: 2.5rem;
+}
+
+@media (max-width: 991.98px) {
+  /* line 164, src/sass/app/hero.scss */
+  .brand .logo {
+    height: 2rem;
+  }
+}
+
+/* line 176, src/sass/app/hero.scss */
+.hint-content {
+  transform: rotate(90deg);
+  transform-origin: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+/* line 186, src/sass/app/hero.scss */
+.service-taglines ul {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-90deg);
+  transform-origin: 30% 190%;
+  width: 23rem;
+  font-size: 0.875rem;
+}
+
+/* line 197, src/sass/app/hero.scss */
+.service-taglines li {
+  padding-left: 8px;
+  display: inline-block;
+}
+
+/* line 201, src/sass/app/hero.scss */
+.service-taglines li:not(:first-child):before {
+  content: "/";
+  padding-right: 8px;
+}
+
+/* line 1, src/sass/app/nav.scss */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* line 5, src/sass/app/nav.scss */
+.nav-toggle {
+  position: relative;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  background: none;
+  z-index: 9;
+}
+
+/* line 17, src/sass/app/nav.scss */
+.nav-toggle .nav-icon,
+.nav-toggle .nav-icon:before,
+.nav-toggle .nav-icon:after {
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 24, src/sass/app/nav.scss */
+.nav-toggle:hover .nav-icon {
+  transform: scale(0.85) rotate(0deg);
+}
+
+/* line 29, src/sass/app/nav.scss */
+.nav-toggle .nav-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 4px;
+  background: #fff;
+  display: inline-block;
+}
+
+/* line 41, src/sass/app/nav.scss */
+.nav-toggle .nav-icon::before, .nav-toggle .nav-icon::after {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+/* line 51, src/sass/app/nav.scss */
+.nav-toggle .nav-icon::before {
+  top: -0.66667em;
+}
+
+/* line 55, src/sass/app/nav.scss */
+.nav-toggle .nav-icon::after {
+  top: 0.66667em;
+}
+
+/* line 60, src/sass/app/nav.scss */
+.nav-toggle.open .nav-icon {
+  background-color: transparent;
+  transform: scale(1.2) rotate(270deg);
+}
+
+/* line 64, src/sass/app/nav.scss */
+.nav-toggle.open .nav-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+/* line 69, src/sass/app/nav.scss */
+.nav-toggle.open .nav-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* line 76, src/sass/app/nav.scss */
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: -100%;
+  z-index: 8;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 89, src/sass/app/nav.scss */
+.nav * {
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 93, src/sass/app/nav.scss */
+.nav .nav-bg {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 100, src/sass/app/nav.scss */
+.nav .nav-bg.layer1 {
+  width: 6.4rem;
+  background: #ffb402;
+}
+
+/* line 105, src/sass/app/nav.scss */
+.nav .nav-bg.layer2 {
+  background: #333;
+}
+
+/* line 109, src/sass/app/nav.scss */
+.nav .nav-bg.layer3 {
+  background: #93104f;
+}
+
+/* line 114, src/sass/app/nav.scss */
+.nav .nav-menu {
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 119, src/sass/app/nav.scss */
+.nav .nav-menu li,
+.nav .nav-menu h4 {
+  overflow: hidden;
+}
+
+/* line 124, src/sass/app/nav.scss */
+.nav .nav-menu h4 {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ffb402;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.25rem;
+}
+
+/* line 132, src/sass/app/nav.scss */
+.nav .nav-menu h4 span {
+  display: block;
+  transform: translateY(-200%);
+}
+
+/* line 138, src/sass/app/nav.scss */
+.nav .nav-menu a {
+  display: inline-block;
+  transform: translateY(200%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  /* line 138, src/sass/app/nav.scss */
+  .nav .nav-menu a {
+    font-size: 3rem;
+  }
+}
+
+/* line 151, src/sass/app/nav.scss */
+.nav .nav-menu a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: #ffb402;
+  height: 1rem;
+  bottom: 15%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 163, src/sass/app/nav.scss */
+.nav .nav-menu a:hover:after {
+  width: 100%;
+}
+
+/* line 169, src/sass/app/nav.scss */
+.nav.open {
+  top: 0;
+}
+
+/* line 172, src/sass/app/nav.scss */
+.nav.open .nav-bg {
+  width: 100%;
+}
+
+/* line 176, src/sass/app/nav.scss */
+.nav.open .nav-bg2 {
+  width: 100%;
+}
+
+/* line 181, src/sass/app/nav.scss */
+.nav.open .nav-menu h4 span {
+  transform: translateY(0);
+}
+
+/* line 185, src/sass/app/nav.scss */
+.nav.open .nav-menu a {
+  transform: translateY(0);
+}
+
+/* line 1, src/sass/app/services.scss */
+.service-wrapper {
+  margin-bottom: 8rem;
+}
+
+/* line 5, src/sass/app/services.scss */
+.service-block {
+  padding: 8rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* line 11, src/sass/app/services.scss */
+.block-image {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+/* line 17, src/sass/app/services.scss */
+.block-image img {
+  width: 7rem;
+}
+
+/* line 22, src/sass/app/services.scss */
+.service-info {
+  flex-basis: 50%;
+}
+
+/* line 26, src/sass/app/services.scss */
+.service-headline {
+  position: relative;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+/* line 32, src/sass/app/services.scss */
+.service-headline:before {
+  position: absolute;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  bottom: -75%;
+  right: 80%;
+  font-size: 12rem;
+  color: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 45, src/sass/app/services.scss */
+.service-headline:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: #ffb402;
+  height: 0.4rem;
+  bottom: 8%;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 58, src/sass/app/services.scss */
+#service_web .service-headline:before {
+  content: "01";
+}
+
+/* line 62, src/sass/app/services.scss */
+#service_app .service-headline:before {
+  content: "02";
+}
+
+/* line 66, src/sass/app/services.scss */
+#service_ecommerce .service-headline:before {
+  content: "03";
+}
+
+/* line 70, src/sass/app/services.scss */
+#service_support .service-headline:before {
+  content: "04";
+}
+
+/* line 74, src/sass/app/services.scss */
+.service-desc {
+  margin-bottom: 2rem;
+}
+
+/* line 78, src/sass/app/services.scss */
+.service-list {
+  border-left: 0.25rem solid #ffb402;
+  padding-left: 2rem;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  display: flex;
+  flex-flow: wrap;
+}
+
+/* line 87, src/sass/app/services.scss */
+.service-list li {
+  flex-basis: calc(50% - 1rem);
+}
+
+/* line 94, src/sass/app/services.scss */
+.service-info:hover .service-headline:before {
+  right: 128%;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 98, src/sass/app/services.scss */
+.service-info:hover .service-headline:after {
+  width: 100%;
+}
+
+/* line 103, src/sass/app/services.scss */
+.service-info:hover .service-list {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 1, src/sass/app/projects.scss */
+.project-block {
+  padding: 8rem 0;
+}
+
+/* line 4, src/sass/app/projects.scss */
+.project-block#project_market {
+  padding-top: 0;
+}
+
+/* line 14, src/sass/app/projects.scss */
+.project-slider {
+  position: relative;
+  margin: 0-6.5rem;
+}
+
+@media (max-width: 991.98px) {
+  /* line 14, src/sass/app/projects.scss */
+  .project-slider {
+    margin: 0-6.5rem;
+  }
+}
+
+/* line 22, src/sass/app/projects.scss */
+.project-slider img {
+  display: block;
+  height: 38rem;
+  margin-right: 1em;
+}
+
+/* line 28, src/sass/app/projects.scss */
+.project-slider img.first {
+  padding-left: 6.5rem;
+}
+
+/* line 35, src/sass/app/projects.scss */
+.project-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 42, src/sass/app/projects.scss */
+.project-details {
+  position: relative;
+  max-width: 30rem;
+  margin-top: -8rem;
+  padding: 3.5rem;
+}
+
+/* line 48, src/sass/app/projects.scss */
+.project-details .slider-next {
+  font-size: 0.75rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem 1.5rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease-in;
+}
+
+/* line 58, src/sass/app/projects.scss */
+.project-details .slider-next:hover {
+  color: #ffb402;
+}
+
+/* line 63, src/sass/app/projects.scss */
+.project-details .project-subject {
+  font-size: 1.125rem;
+  color: #ffb402;
+  margin-bottom: 0.75rem;
+}
+
+/* line 69, src/sass/app/projects.scss */
+.project-details .project-name {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+/* line 74, src/sass/app/projects.scss */
+.project-details .project-link {
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+/* line 82, src/sass/app/projects.scss */
+.project-details .project-link i {
+  color: #ffb402;
+  margin-left: 0.25rem;
+  transition: margin 0.3s ease-in;
+}
+
+/* line 88, src/sass/app/projects.scss */
+.project-details .project-link:hover {
+  color: #ffb402;
+}
+
+/* line 90, src/sass/app/projects.scss */
+.project-details .project-link:hover i {
+  margin-left: 0.75rem;
+}
+
+/* line 99, src/sass/app/projects.scss */
+.project-specs {
+  display: flex;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+/* line 105, src/sass/app/projects.scss */
+.project-specs .specs-block {
+  flex: 0 50%;
+}
+
+/* line 109, src/sass/app/projects.scss */
+.project-specs .spec-type {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 114, src/sass/app/projects.scss */
+.project-specs .spec-list {
+  text-transform: uppercase;
+}
+
+/* line 1, src/sass/app/tech.scss */
+.tech-wrapper {
+  display: flex;
+  padding-bottom: 8rem;
+}
+
+/* line 6, src/sass/app/tech.scss */
+.tech-block {
+  flex-basis: 25%;
+}
+
+/* line 9, src/sass/app/tech.scss */
+.tech-block img {
+  width: 4.5rem;
+  opacity: 0.7;
+}
+
+/* line 14, src/sass/app/tech.scss */
+.tech-block .tech-header {
+  font-size: 1.75rem;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+/* line 2, src/sass/app/about.scss */
+#about .header-wrapper {
+  max-width: 62rem;
+  width: auto;
+  min-width: unset;
+}
+
+/* line 7, src/sass/app/about.scss */
+#about .header-wrapper .header-main {
+  font-size: 2.25rem;
+}
+
+/* line 13, src/sass/app/about.scss */
+.about-wrapper {
+  padding-bottom: 8rem;
+}
+
+/* line 17, src/sass/app/about.scss */
+.about-block {
+  max-width: 25rem;
+}
+
+/* line 20, src/sass/app/about.scss */
+.about-block img {
+  width: 6rem;
+}
+
+/* line 24, src/sass/app/about.scss */
+.about-block .about-header {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+/* line 29, src/sass/app/about.scss */
+.about-block p {
+  font-size: 1.125rem;
+}
+
+/* line 1, src/sass/app/contact.scss */
+.contact-wrapper {
+  padding-bottom: 8rem;
+}
+
+/* line 5, src/sass/app/contact.scss */
+.email-label {
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+/* line 11, src/sass/app/contact.scss */
+.epikode-contact {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* line 16, src/sass/app/contact.scss */
+.epikode-contact:hover {
+  color: #ffb402;
+}
+
+/* line 2, src/sass/app/footer.scss */
+.footer-wrapper {
+  padding: 3rem 0;
+}
+
+/* line 6, src/sass/app/footer.scss */
+.footer-links {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 30rem;
+}
+
+/* line 11, src/sass/app/footer.scss */
+.footer-links li {
+  flex-basis: 25%;
+}
+
+/* line 15, src/sass/app/footer.scss */
+.footer-links a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* line 21, src/sass/app/footer.scss */
+.footer-links a:hover {
+  color: #ffb402;
+}
+
+/* line 27, src/sass/app/footer.scss */
+.copyright {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 2rem 0;
+}

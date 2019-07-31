@@ -1,0 +1,138 @@
+<article class="section-wrapper">
+  <div class="section-inner">
+    <div id="projects">
+      {% import 'partials/header.nunjucks' as sectionHead %}
+      {{
+        sectionHead.content(
+          "Past Projects",
+          "Featured projects & cases",
+          "You think it, we make it."
+        )
+      }}
+    </div>
+    <!-- PROJECT: Market clothing -->
+    <section id="project_market" class="project-block">
+      <div class="project-slider">
+        <div class="js-slider">
+          <div><img class="first" src="/img/projects/market-d-01.png" alt="" /></div>
+          <div><img src="/img/projects/market-m-01.png" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="project-info-wrapper">
+        <div class="project-details dynamic-bg">
+          <div class="slider-next">
+            click or drag &rarr;
+          </div>
+          <header class="project-header">
+            <h5 class="project-subject">Ecommerce Website</h5>
+            <h4 class="project-name">Market Clothing</h4>
+          </header>
+          <p class="project-desc">
+            Market clothing was looking to transform the South Asian fashion shopping
+            experience. Their brand and products are all about individual style and obsessed
+            with quality. They wanted their consumer shopping experience to be fun and
+            uncomplicated.
+          </p>
+          <a href="#" class="project-link">
+            Visit Website
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-specs">
+          <div class="specs-block">
+            <h6 class="spec-type">Platforms</h6>
+            <ul class="list-unstyled section-list">
+              <li>Desktop web</li>
+              <li>Tablet web</li>
+              <li>Mobile web</li>
+            </ul>
+          </div>
+          <div class="specs-block">
+            <h6 class="spec-type">Our Role</h6>
+            <ul class="list-unstyled section-list">
+              <li>Website creative & design direction</li>
+              <li>User experience</li>
+              <li>CMS intergration</li>
+              <li>Frontend & backend development</li>
+              <li>Deployment support</li>
+            </ul>
+          </div>
+          <div class="specs-block">
+            <h6 class="spec-type">Technology</h6>
+            <ul class="list-unstyled section-list">
+              <li>HTML/CSS</li>
+              <li>Javascript</li>
+              <li>Liquid</li>
+              <li>Shopify</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT: Trilliant -->
+    <section id="project_trilliant" class="project-block">
+      <div class="project-slider">
+        <div class="js-slider">
+          <div><img class="first" src="/img/projects/trilliant-d-01.png" alt="" /></div>
+          <div><img src="/img/projects/trilliant-m-01.png" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="project-info-wrapper">
+        <div class="project-details dynamic-bg">
+          <div class="slider-next">
+            click or drag &rarr;
+          </div>
+          <header class="project-header">
+            <h5 class="project-subject">Company Website</h5>
+            <h4 class="project-name">Trilliant Wealth</h4>
+          </header>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <a href="#" class="project-link">
+            Visit Website
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-specs">
+          <div class="specs-block">
+            <h6 class="spec-type">Platforms</h6>
+            <ul class="list-unstyled section-list">
+              <li>Desktop web</li>
+              <li>Tablet web</li>
+              <li>Mobile web</li>
+            </ul>
+          </div>
+          <div class="specs-block">
+            <h6 class="spec-type">Our Role</h6>
+            <ul class="list-unstyled section-list">
+              <li>Website creative & direction</li>
+              <li>Logo design</li>
+              <li>User experience</li>
+              <li>CMS intergration</li>
+              <li>Frontend & backend development</li>
+              <li>Deployment support</li>
+              <li>Training videos</li>
+            </ul>
+          </div>
+          <div class="specs-block">
+            <h6 class="spec-type">Technology</h6>
+            <ul class="list-unstyled section-list">
+              <li>HTML/CSS</li>
+              <li>Javascript</li>
+              <li>PHP</li>
+              <li>Wordpress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>

@@ -2,55 +2,22 @@ body.nav-open {
   overflow: hidden;
 }
 
-.nav-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: $hero-spacing-v $hero-spacing-h;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @include media-breakpoint-down(sm) {
-    padding: $mobile-hero-spacing-v $mobile-hero-spacing-h;
-  }
-}
-
-.logo {
-  height: 50px;
-
-  @include media-breakpoint-down(md) {
-    height: 34px;
-  }
-}
-
 .nav-toggle {
+  position: relative;
   padding: 0;
   font: inherit;
   color: inherit;
-  background-color: $nav-toggle-bg;
   cursor: pointer;
   border: 0;
   width: $nav-toggle-size;
   height: $nav-toggle-size;
-  position: relative;
+  background: none;
   z-index: 9;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-top: $hero-spacing-v;
-  margin-right: $hero-spacing-h;
-
-  @include media-breakpoint-down(sm) {
-    margin-top: $mobile-hero-spacing-v;
-    margin-right: $mobile-hero-spacing-h;
-  }
 
   .nav-icon,
   .nav-icon:before,
   .nav-icon:after {
-    transition: .3s ease-in-out;
+    transition: all 0.3s $transition-timing-function;
   }
 
   &:hover {
@@ -117,14 +84,10 @@ body.nav-open {
   left: 0;
   top: -100%;
   z-index: 8;
-  transition: all 0.3s ease;
-  transition-duration: 500ms;
-  transition-timing-function: $transition-timing-function;
+  transition: all 0.5s $transition-timing-function;
 
   * {
-    transition: all 0.3s ease;
-    transition-duration: 500ms;
-    transition-timing-function: $transition-timing-function;
+    transition: all 0.5s $transition-timing-function;
   }
 
   .nav-bg {
@@ -135,7 +98,7 @@ body.nav-open {
     top: 0;
 
     &.layer1 {
-      width: 15px;
+      width: 6.4rem;
       background: $nav-bg1;
     }
 
@@ -159,12 +122,12 @@ body.nav-open {
     }
 
     h4 {
-      font-size: 0.75em;
+      font-size: 0.75rem;
       font-weight: 800;
-      color: $secondary-color;
+      color: $highlight;
       text-transform: uppercase;
-      margin-bottom: 2em;
-      letter-spacing: 0.25em;
+      margin-bottom: 2rem;
+      letter-spacing: 0.25rem;
 
       span {
         display: block;
@@ -175,14 +138,14 @@ body.nav-open {
     a {
       display: inline-block;
       transform: translateY(200%);
-      font-size: 2em;
+      font-size: 2rem;
       font-weight: 700;
       color: #fff;
-      margin: 10px 35px;
+      margin: 0.5rem 0;
       position: relative;
 
       @include media-breakpoint-up(md) {
-        font-size: 3em;
+        font-size: 3rem;
       }
 
       &:after {
@@ -190,13 +153,11 @@ body.nav-open {
         position: absolute;
         width: 0;
         background-color: $nav-highlight;
-        height: 16px;
-        top: 40px;
+        height: 1rem;
+        bottom: 15%;
         left: 0;
         z-index: -1;
-        transition: all 0.3s ease;
-        transition-duration: 500ms;
-        transition-timing-function: $transition-timing-function;
+        transition: all 0.5s $transition-timing-function;
       }
 
       &:hover:after {

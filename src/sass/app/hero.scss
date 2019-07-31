@@ -1,59 +1,57 @@
 .hero {
-  color: $header-color;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  // background-image: url("./dist/img/duck2.svg");
-  background-repeat: no-repeat;
-  background-size: 440px;
-  background-position: 85% 50%;
+  position: relative;
 
-  @include media-breakpoint-down(md) {
-    flex-flow: column;
-    text-align: center;
-    padding: $mobile-hero-spacing-v $mobile-hero-spacing-h;
-    justify-content: center;
+  .section-inner {
+    height: 100vh;
   }
 
-  .hero-img {
-    max-width: 540px;
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+
+    @include media-breakpoint-down(md) {
+      // flex-flow: column;
+      // text-align: center;
+      // justify-content: center;
+    }
   }
 
   .headline {
+    grid-column-start: 2;
+    grid-column-end: 5;
 
-    @include media-breakpoint-up(lg) {
-      padding: $hero-spacing-v $hero-spacing-h;
-      margin-bottom: $mouse-margin + $mouse-height;
-    }
-
-    h1 {
-      font-weight: $font-weight-bold;
-      font-size: 8em;
+    h2 {
+      font-family: "Russo One", sans-serif;
+      font-weight: initial;
+      font-size: 8rem;
       text-transform: uppercase;
-      margin: 0;
+      margin-left: -0.4rem;
+      margin-bottom: 1.75rem;
+      line-height: 1;
 
       @include media-breakpoint-between(sm, lg) {
-        font-size: 6em;
+        font-size: 6rem;
       }
 
       @include media-breakpoint-down(xs) {
-        font-size: 3.25em;
+        font-size: 3.25rem;
       }
     }
 
-    h2,
+    h1,
     h3 {
-      font-family: $font-family-serif;
-      font-size: 1.5em;
-      margin: 1em 0 0;
+      font-size: 1.75rem;
+      margin: 0;
+      font-weight: $font-weight-normal;
 
       @include media-breakpoint-between(sm, lg) {
-        font-size: 1.3em;
+        font-size: 1.3rem;
       }
 
       @include media-breakpoint-down(xs) {
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 1.8;
       }
     }
@@ -61,32 +59,139 @@
     h3 span {
       color: $header-highlight;
       font-weight: $font-weight-bold;
-      font-family: $font-family-sans-serif;
 
       @include media-breakpoint-down(xs) {
         display: block;
-        min-height: 1.8em;
-        font-size: 1.5em;
+        min-height: 1.8rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    .btn-outline {
+      margin: 2.5em 0;
+    }
+  }
+}
+
+// Mouse Animation
+//
+@keyframes mouse-scroll {
+  0% {
+    top: 20%;
+  }
+
+  40% {
+    top: 30%;
+  }
+
+  100% {
+    top: 20%;
+  }
+}
+
+.scroll-mouse {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  position: absolute;
+  bottom: $mouse-margin;
+  left: 0;
+  width: 100%;
+
+  .inner {
+    margin: 0 auto;
+    width: $mouse-width;
+    height: $mouse-height;
+    position: relative;
+    border-radius: $mouse-width/2 + $mouse-border-width * 2;
+    border: $mouse-border-width solid $mouse-color;
+  }
+
+  .wheel {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    width: $wheel-size;
+    height: $wheel-size * 2;
+    margin-left: -$wheel-size/2;
+    border-radius: $wheel-size;
+    background-color: $mouse-color;
+    animation: mouse-scroll 0.9s ease-in infinite;
+  }
+}
+
+// Hero layover
+//
+.hero-layover {
+  top: 0;
+  bottom: 0;
+  width: $section-spacing-h;
+  display: flex;
+
+  &.layover-left {
+    position: absolute;
+    left: 0;
+    align-items: center;
+    justify-items: center;
+    background-color: $cherry;
+    z-index: -1;
+  }
+
+  &.layover-right {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    @include media-breakpoint-up(md) {
+      transition: background-color 0.3s ease-out;
+      height: 100%;
+      width: $section-spacing-h;
+      &:hover {
+        background-color: #222;
       }
     }
   }
 }
 
+// Layover right
+//
+.brand {
+  .logo {
+    height: 2.5rem;
+
+    @include media-breakpoint-down(md) {
+      height: 2rem;
+    }
+  }
+}
+
+.section-hint {
+}
+
+.hint-content {
+  transform: rotate(90deg);
+  transform-origin: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+// Layover left
+//
 .service-taglines {
-  color: lighten($color: $primary-color, $amount: 65%);
-
-  @include media-breakpoint-up(lg) {
-    transform: rotate(-90deg);
-  }
-
-  @include media-breakpoint-down(xs) {
-    font-size: 0.65em;
-  }
-
   ul {
-    max-width: 400px;
+    color: rgba(#fff, 0.7);
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: 30% 190%;
+    width: 23rem;
+    font-size: 0.875rem;
   }
 
   li {
@@ -97,50 +202,5 @@
       content: "/";
       padding-right: 8px;
     }
-  }
-}
-
-@keyframes mouse-scroll {
-  0% {
-    top: 20%;
-  }
-
-  50% {
-    top: 30%;
-  }
-
-  100% {
-    top: 20%;
-  }
-}
-
-.scroll-mouse {
-
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-
-  position: absolute;
-  bottom: $mouse-margin;
-  left: 50%;
-
-  .inner {
-    width: $mouse-width;
-    height: $mouse-height;
-    position: relative;
-    border-radius: $mouse-width/2 + $mouse-border-width * 2;
-    border: $mouse-border-width solid $mouse-color;
-  }
-  
-  .wheel {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: $wheel-size;
-    height: $wheel-size*2;
-    margin-left: -$wheel-size/2;
-    border-radius: $wheel-size;
-    background-color: $mouse-color;
-    animation: mouse-scroll .9s infinite;
   }
 }

@@ -1,0 +1,22 @@
+{
+  "editor.formatOnSave": true,
+  "liveServer.settings.port": 8888,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.js",
+    // "**/*.css",
+    "**/*.nunjucks",
+    "**/*.ts"
+  ],
+  // "liveServer.settings.wait": 2000,
+  "liveServer.settings.root": "/docs",
+  "files.associations": {
+    "*.svg": "html",
+    "*.nunjucks": "html"
+  },
+  "search.exclude": {
+    "**/docs": true
+  }
+}

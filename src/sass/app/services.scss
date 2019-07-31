@@ -1,0 +1,107 @@
+.service-wrapper {
+  margin-bottom: $section-spacing-v;
+}
+
+.service-block {
+  padding: $section-spacing-v 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.block-image {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: $block-spacing;
+
+  img {
+    width: 7rem;
+  }
+}
+
+.service-info {
+  flex-basis: 50%;
+}
+
+.service-headline {
+  position: relative;
+  font-size: 2.25rem;
+  margin-bottom: $block-spacing;
+  display: inline-block;
+
+  &:before {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    bottom: -75%;
+    right: 80%;
+    font-size: 12rem;
+    color: rgba(0, 0, 0, 0.15);
+    z-index: -1;
+    transition: all 0.3s $transition-timing-function;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: $highlight;
+    height: 0.4rem;
+    bottom: 8%;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+#service_web .service-headline:before {
+  content: "01";
+}
+
+#service_app .service-headline:before {
+  content: "02";
+}
+
+#service_ecommerce .service-headline:before {
+  content: "03";
+}
+
+#service_support .service-headline:before {
+  content: "04";
+}
+
+.service-desc {
+  margin-bottom: $block-spacing;
+}
+
+.service-list {
+  border-left: 0.25rem solid $highlight;
+  padding-left: $block-spacing;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 0.3s $transition-timing-function;
+  display: flex;
+  flex-flow: wrap;
+
+  li {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+.service-info:hover {
+  .service-headline {
+    &:before {
+      right: 128%;
+      color: rgba(0, 0, 0, 0.25);
+    }
+    &:after {
+      width: 100%;
+    }
+  }
+
+  .service-list {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

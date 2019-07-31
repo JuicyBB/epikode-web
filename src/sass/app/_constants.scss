@@ -1,0 +1,44 @@
+// Application Specific Variables
+
+// General
+//
+$section-spacing-h: 6.4rem;
+$section-spacing-v: 8rem;
+$mobile-section-spacing-h: 1.4rem;
+$mobile-section-spacing-v: 3rem;
+
+// Hero
+//
+$hero-spacing-h: $section-spacing-h;
+$hero-spacing-v: 2rem;
+$mobile-hero-spacing-h: $mobile-section-spacing-v;
+$mobile-hero-spacing-v: 1.4rem;
+
+$header-bg: $primary;
+$header-color: #fff;
+$header-highlight: $highlight;
+
+// Mouse
+//
+$mouse-color: #fff;
+$mouse-width: 1.5rem;
+$mouse-height: 2.5rem;
+$mouse-border-width: 0.125rem;
+$wheel-size: $mouse-border-width * 2;
+$mouse-margin: 50px;
+
+// Navigation
+//
+$nav-bg1: $highlight;
+$nav-bg2: #333;
+$nav-bg3: $cherry;
+$nav-highlight: $highlight;
+
+$nav-toggle-size: 3em;
+$nav-toggle-color: #fff;
+$nav-toggle-bg: transparent;
+$transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+// Services
+$block-spacing: 2rem;
+$block-spacing-mobile: 1rem;

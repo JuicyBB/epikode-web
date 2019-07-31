@@ -1,0 +1,17 @@
+<article id="contact" class="section-wrapper">
+  <div class="section-inner">
+    {% import 'partials/header.nunjucks' as sectionHead %}
+    {{
+      sectionHead.content(
+        "Contact Us",
+        "Let's bring your ideas to life",
+        "Email us and we will get back to you as soon as possible."
+      )
+    }}
+
+    <div class="contact-wrapper">
+      <div class="email-label">Email us at</div>
+      <a class="epikode-contact" href="mailto:hello@epikode.com">hello@epikode.com</a>
+    </div>
+  </div>
+</article>

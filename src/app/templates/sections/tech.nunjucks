@@ -1,0 +1,64 @@
+<article id="tech" class="section-wrapper">
+  <div class="section-inner">
+    {% import 'partials/header.nunjucks' as sectionHead %}
+    {{
+      sectionHead.content(
+        "Technology & Software",
+        "Expertise in a wide range of latest techology",
+        "We select the tech stacks and systems that will get the best results for your project."
+      )
+    }}
+
+    <div class="tech-wrapper">
+      <section class="tech-block">
+        <h4 class="tech-header">Tech Stack</h4>
+        <ul class="list-unstyled section-list">
+          <li>Javascript (ES5/ES6)</li>
+          <li>HTML/CSS/SASS</li>
+          <li>NodeJS</li>
+          <li>Express</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Handlebar</li>
+          <li>Nunjucks</li>
+          <li>Cordova</li>
+        </ul>
+      </section>
+      <section class="tech-block">
+        <h4 class="tech-header">Architecture</h4>
+        <ul class="list-unstyled section-list">
+          <li>MongoDB</li>
+          <li>MySQL</li>
+          <li>Amazon web service (AWS)</li>
+          <li>Single page applications (SPA)</li>
+          <li>API driven development</li>
+          <li>Heroku cloud platform</li>
+          <li>Automated Deployments</li>
+        </ul>
+      </section>
+      <section class="tech-block">
+        <h4 class="tech-header">Creative Software</h4>
+        <ul class="list-unstyled section-list">
+          <li>Invision</li>
+          <li>Sketch</li>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>Lightroom</li>
+          <li>Premiere</li>
+        </ul>
+      </section>
+      <section class="tech-block">
+        <h4 class="tech-header">Other Tools</h4>
+        <ul class="list-unstyled section-list">
+          <li>Google analytics</li>
+          <li>Wordpress</li>
+          <li>Woo commerce</li>
+          <li>Shopify</li>
+          <li>Wave payment processing</li>
+          <li>Square payment processing</li>
+          <li>Storybook</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</article>

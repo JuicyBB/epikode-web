@@ -1,0 +1,117 @@
+.project-block {
+  padding: $section-spacing-v 0;
+
+  &#project_market {
+    padding-top: 0;
+  }
+}
+
+// Project slider
+//
+
+$slide-spacing: #{($section-spacing-h + 0.1rem)};
+
+.project-slider {
+  position: relative;
+  margin: 0 -$slide-spacing;
+
+  @include media-breakpoint-down(md) {
+    margin: 0 -$slide-spacing;
+  }
+
+  img {
+    display: block;
+    height: 38rem;
+    margin-right: 1em;
+  }
+
+  img.first {
+    padding-left: $slide-spacing;
+  }
+}
+
+// Project info wrapper
+//
+.project-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Details
+//
+.project-details {
+  position: relative;
+  max-width: 30rem;
+  margin-top: -8rem;
+  padding: 3.5rem;
+
+  .slider-next {
+    font-size: 0.75rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  .project-subject {
+    font-size: 1.125rem;
+    color: $highlight;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-name {
+    font-size: 2.25rem;
+    margin-bottom: $block-spacing;
+  }
+
+  .project-link {
+    font-weight: $font-weight-bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in;
+    margin-top: $block-spacing;
+    display: inline-block;
+
+    i {
+      color: $highlight;
+      margin-left: 0.25rem;
+      transition: margin 0.3s ease-in;
+    }
+
+    &:hover {
+      color: $highlight;
+      i {
+        margin-left: 0.75rem;
+      }
+    }
+  }
+}
+
+// Specs
+//
+.project-specs {
+  display: flex;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+
+  .specs-block {
+    flex: 0 50%;
+  }
+
+  .spec-type {
+    text-transform: uppercase;
+    color: rgba(#fff, 0.6);
+  }
+
+  .spec-list {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,19 @@
+.tech-wrapper {
+  display: flex;
+  padding-bottom: $section-spacing-v;
+}
+
+.tech-block {
+  flex-basis: 25%;
+
+  img {
+    width: 4.5rem;
+    opacity: 0.7;
+  }
+
+  .tech-header {
+    font-size: 1.75rem;
+    margin: $block-spacing 0;
+    font-weight: $font-weight-bold;
+  }
+}
