@@ -4,7 +4,7 @@
 
 var settings = {
   scripts: true, // Turn on/off script tasks
-  polyfills: true, // Turn on/off polyfill tasks
+  polyfills: false, // Turn on/off polyfill tasks
   styles: true, // Turn on/off style tasks
   svgs: false, // Turn on/off SVG tasks
   static: true, // Turn on/off static file copying
@@ -171,6 +171,17 @@ gulp.task("build:scripts", ["clean:docs"], function() {
         }
       })
     )
+    .pipe(jsTasks());
+});
+
+// Create combined script file
+gulp.task("build:combinejs", ["clean:docs"], function() {
+  if (!settings.scripts) return;
+
+  return gulp
+    .src(paths.scripts.input)
+    .pipe(plumber())
+    .pipe(concat("app.js"))
     .pipe(jsTasks());
 });
 
@@ -371,6 +382,7 @@ gulp.task("compile", [
   "lint:scripts",
   "clean:docs",
   "build:scripts",
+  "build:combinejs",
   "build:polyfills",
   "build:styles",
   "build:static",

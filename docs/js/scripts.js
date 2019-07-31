@@ -26,7 +26,7 @@
    * Navigation
    * =======================
    */
-  $(".nav-toggle").on("click", (function() {
+  $(".nav-toggle, .nav a").on("click", (function() {
     $(".nav, .nav-toggle").toggleClass("open");
     $("body").toggleClass("nav-open");
 
@@ -95,116 +95,6 @@
 
   /**
    * =======================
-   * Background Tween
-   * =======================
-   */
-  var color = {
-    blue: "#0d245f",
-    purple: "#3A0D5A",
-    cherry: "#93104F",
-    pink: "#E53655",
-    red: "#AB1515",
-    orange: "#DA6F0D",
-    yellow: "#FFB402",
-    green: "#4D7B1E",
-    teal: "#0AB092",
-    cyan: "#0A88B0",
-    gray: "#212121",
-  };
-
-  var section = {
-    hero: color.purple,
-    services: color.blue,
-    project1: "#ad5851",
-    project2: "#0c1938",
-    about: color.cyan,
-    tech: color.cherry,
-    contact: color.purple,
-  };
-
-  var duration = 0.5;
-
-  var controller = new ScrollMagic.Controller({
-    globalSceneOptions: { duration: 500 },
-  });
-
-  new ScrollMagic.Scene({
-    triggerElement: "#hero",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.hero,
-    })
-    // .setClassToggle("#hero-hint", "active")
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#services",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.services,
-    })
-    // .setClassToggle("#services-hint", "active")
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#projects",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.project1,
-    })
-    // .setClassToggle("#projects-hint", "active")
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#project_market",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.project1,
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#project_trilliant",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.project2,
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#tech",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.tech,
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#about",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.about,
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-    triggerElement: "#contact",
-  })
-    .setTween("body, .dynamic-bg", {
-      backgroundColor: section.contact,
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  /**
-   * =======================
    * Slick Slider
    * =======================
    */
@@ -218,53 +108,4 @@
     prevArrow: "",
     nextArrow: $(".slider-next"),
   });
-
-  $(".js-slider").on("init", (function() {
-    console.log("hi");
-  }));
-
-  $(".js-slider").on("afterChange", (function(event, slick, currentSlide, nextSlide) {
-    console.log(event + "," + slick + "," + currentSlide + "," + nextSlide);
-  }));
 })();
-
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click((function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top,
-          },
-          1000,
-          (function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) {
-              // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            }
-          })
-        );
-      }
-    }
-  }));
