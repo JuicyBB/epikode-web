@@ -14,8 +14,8 @@
     <section id="project_market" class="project-block">
       <div class="project-slider">
         <div class="js-slider">
-          <div><img class="first" src="/img/projects/market-d-01.png" alt="" /></div>
-          <div><img src="/img/projects/market-m-01.png" alt="" /></div>
+          <div><img class="first" src="img/projects/market-d-01.png" alt="" /></div>
+          <div><img src="img/projects/market-m-01.png" alt="" /></div>
         </div>
       </div>
 
@@ -76,8 +76,8 @@
     <section id="project_trilliant" class="project-block">
       <div class="project-slider">
         <div class="js-slider">
-          <div><img class="first" src="/img/projects/trilliant-d-01.png" alt="" /></div>
-          <div><img src="/img/projects/trilliant-m-01.png" alt="" /></div>
+          <div><img class="first" src="img/projects/trilliant-d-01.png" alt="" /></div>
+          <div><img src="img/projects/trilliant-m-01.png" alt="" /></div>
         </div>
       </div>
 

@@ -11,7 +11,7 @@
     <div class="service-wrapper">
       <section id="service_web" class="service-block">
         <div class="block-image">
-          <img src="/img/service_web.svg" alt="Website development" />
+          <img src="img/service_web.svg" alt="Website development" />
         </div>
         <div class="service-info">
           <h4 class="service-headline">Website design &amp; development</h4>
@@ -32,7 +32,7 @@
       </section>
       <section id="service_app" class="service-block">
         <div class="block-image">
-          <img src="/img/service_app.svg" alt="App development" />
+          <img src="img/service_app.svg" alt="App development" />
         </div>
         <div class="service-info">
           <h4 class="service-headline">App design &amp; development</h4>
@@ -54,7 +54,7 @@
 
       <section id="service_ecommerce" class="service-block">
         <div class="block-image">
-          <img src="/img/service_ecom.svg" alt="Ecommerce solutions" />
+          <img src="img/service_ecom.svg" alt="Ecommerce solutions" />
         </div>
         <div class="service-info">
           <h4 class="service-headline">Ecommerce solutions</h4>
@@ -75,7 +75,7 @@
       </section>
       <section id="service_support" class="service-block">
         <div class="block-image">
-          <img src="/img/service_support.svg" alt="Maintenance support" />
+          <img src="img/service_support.svg" alt="Maintenance support" />
         </div>
         <div class="service-info">
           <h4 class="service-headline">Maintenance &amp; Support</h4>
