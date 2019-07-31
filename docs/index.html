@@ -64,7 +64,9 @@
           ></span
           ><i></i> solutions.
         </h3>
-        <a href="#" class="btn-outline">Our Services<i class="fas fa-arrow-right mr-1"></i></a>
+        <a href="#services" class="btn-outline"
+          >Our Services<i class="fas fa-arrow-right mr-1"></i
+        ></a>
       </header>
     </div>
     <div class="scroll-mouse">
@@ -90,14 +92,18 @@
   <div class="nav-bg layer1"></div>
   <div class="nav-bg layer2"></div>
   <div class="nav-bg layer3"></div>
-  <div class="nav-menu">
+  <div id="nav-menu" class="nav-menu">
     <h4><span>Epikode</span></h4>
     <ul class="list-unstyled">
-      <li><a href="#services">Our Services</a></li>
-      <li><a href="#projects">Past Projects</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#">Client Login</a></li>
+      <li class="sr-only"><a href="#hero" data-linked="true">Back to top</a></li>
+<li><a href="#services" data-linked="true">Our Services</a></li>
+<li><a href="#projects" data-linked="true">Past Projects</a></li>
+<li><a href="#process" data-linked="true">Our Process</a></li>
+<li><a href="#about" data-linked="true">About Us</a></li>
+<li class="sr-only"><a href="#tech" data-linked="true">Technology</a></li>
+<li><a href="#contact" data-linked="true">Contact Us</a></li>
+<li><a href="http://cloud.epikode.com" target="_blank">Client Login</a></li>
+
     </ul>
   </div>
 </nav>
@@ -106,10 +112,21 @@
       <div class="nav-icon"></div>
     </button>
     <div class="section-hint">
-      <div class="hint-content">
-        <span id="hero-hint">Scroll Down</span>
-        <span id="services-hint">Our Services</span>
-        <span id="projects-hint">Past Work</span>
+      <div id="hint-content" class="hint-content">
+        <div class="scroll-hint active">
+          <span id="hero-hint">
+            Scroll down
+          </span>
+        </div>
+        <div class="scroll-hint"><span id="services-hint">Our Services</span></div>
+        <div class="scroll-hint"><span id="projects-hint">Past Work</span></div>
+        <div class="scroll-hint"><span id="process-hint">Our Process</span></div>
+        <div class="scroll-hint"><span id="about-hint">About Us</span></div>
+        <div class="scroll-hint"><span id="tech-hint">Technology</span></div>
+        <div class="scroll-hint"><span id="contact-hint">Contact Us</span></div>
+      </div>
+      <div class="scroll-line">
+        <div class="scroll-indicator"></div>
       </div>
     </div>
     <div class="brand">
@@ -120,14 +137,16 @@
 
 
 <!-- Services Include -->
-<article id="services" class="section-wrapper">
+<article id="services" class="section-wrapper linked">
   <div class="section-inner">
     
     
 <header class="header-wrapper">
   <h2 class="header-subject">Our Services</h2>
   <h3 class="header-main">Full service end to end digital capabilities</h3>
+  
   <div class="header-desc">We create custom websites,  ecommerce solutions,  native/web apps, and offer maintenance services.</div>
+  
 </header>
 
     <div class="service-wrapper">
@@ -149,27 +168,6 @@
             <li>Desktop, Tablet, and Mobile UI</li>
             <li>Database & API Intergration</li>
             <li>Cloud Hosting (AWS) & domain setup</li>
-          </ul>
-        </div>
-      </section>
-      <section id="service_app" class="service-block">
-        <div class="block-image">
-          <img src="img/service_app.svg" alt="App development" />
-        </div>
-        <div class="service-info">
-          <h4 class="service-headline">App design &amp; development</h4>
-          <p class="service-desc">
-            Have an idea for an app? We are focused on creating elegant solutions to solve
-            complex problems. Whether you need a native or web-based application, we can create
-            exactly what you need with today’s most modern technology avaliable.
-          </p>
-          <ul class="list-unstyled section-list service-list">
-            <li>Hybrid Web Applications</li>
-            <li>iOS / Android Native Applications</li>
-            <li>Media Applications</li>
-            <li>UX & Wireframing</li>
-            <li>Cross platform API structures</li>
-            <li>B2B or Consumer Applications</li>
           </ul>
         </div>
       </section>
@@ -195,6 +193,29 @@
           </ul>
         </div>
       </section>
+
+      <section id="service_app" class="service-block">
+        <div class="block-image">
+          <img src="img/service_app.svg" alt="App development" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">App design &amp; development</h4>
+          <p class="service-desc">
+            Have an idea for an app? We are focused on creating elegant solutions to solve
+            complex problems. Whether you need a native or web-based application, we can create
+            exactly what you need with today’s most modern technology avaliable.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>Hybrid Web Applications</li>
+            <li>iOS / Android Native Applications</li>
+            <li>Media Applications</li>
+            <li>UX & Wireframing</li>
+            <li>Cross platform API structures</li>
+            <li>B2B or Consumer Applications</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="service_support" class="service-block">
         <div class="block-image">
           <img src="img/service_support.svg" alt="Maintenance support" />
@@ -222,18 +243,18 @@
 
 
 <!-- Projects Include -->
-<article class="section-wrapper">
+<article id="projects" class="section-wrapper linked">
   <div class="section-inner">
-    <div id="projects">
-      
-      
+    
+    
 <header class="header-wrapper">
   <h2 class="header-subject">Past Projects</h2>
   <h3 class="header-main">Featured projects &amp; cases</h3>
+  
   <div class="header-desc">You think it, we make it.</div>
+  
 </header>
 
-    </div>
     <!-- PROJECT: Market clothing -->
     <section id="project_market" class="project-block">
       <div class="project-slider">
@@ -245,9 +266,7 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next">
-            click or drag &rarr;
-          </div>
+          <div class="slider-next"><span>&larr;</span>drag image</div>
           <header class="project-header">
             <h5 class="project-subject">Ecommerce Website</h5>
             <h4 class="project-name">Market Clothing</h4>
@@ -307,9 +326,7 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next">
-            click or drag &rarr;
-          </div>
+          <div class="slider-next"><span>&larr;</span>drag image</div>
           <header class="project-header">
             <h5 class="project-subject">Company Website</h5>
             <h4 class="project-name">Trilliant Wealth</h4>
@@ -362,15 +379,101 @@
 </article>
 
 
+<!-- Process Include -->
+<article id="process" class="section-wrapper linked">
+  <div class="section-inner">
+    
+    
+<header class="header-wrapper">
+  <h2 class="header-subject">Our Process</h2>
+  <h3 class="header-main">A solid process &amp; good planning is halfway to success</h3>
+  
+  <div class="header-desc">We add value in every step of the way.</div>
+  
+</header>
+
+
+    <div class="process-wrapper">
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle active">Research</a>
+        <div class="accord-content active">
+          <div class="process-desc">
+            <img src="img/process_research.svg" alt="Research" />
+            <p>
+              The stage of discovering and researching, determines how the subsequent steps
+              will look like. The most important task at this point is to get a clear
+              understanding of your future website purposes, the main goals you wish to get,
+              and the target audience you want to attract to your site.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Prototype</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_prototype.svg" alt="Prototype" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Development</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_develop.svg" alt="Development" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Launch</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_launch.svg" alt="Launch" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Grow</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_grow.svg" alt="Grow" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
 <!-- About Include -->
-<article id="about" class="section-wrapper">
+<article id="about" class="section-wrapper linked">
   <div class="section-inner">
     
     
 <header class="header-wrapper">
   <h2 class="header-subject">About Epikode</h2>
   <h3 class="header-main">We are a small dedicated team located in Vancouver, BC. When you hire Epikode, you are partnering with a team who is passionate about tecnology, user experience, and code quality.</h3>
-  <div class="header-desc"></div>
+  
 </header>
 
 
@@ -378,7 +481,6 @@
       <div class="row">
         <div class="col-md">
           <div class="about-block">
-            <img src="img/about_trophy.svg" alt="Tech expertise" />
             <h4 class="about-header">We don't do everything, but what we do, we do well</h4>
             <p>
               Together we have a combined 20+ years of design and development experience. Being
@@ -390,7 +492,6 @@
         </div>
         <div class="col-md">
           <div class="about-block">
-            <img src="img/about_quality.svg" alt="Work quality" />
             <h4 class="about-header">
               No matter the size of the project, quality is our focus
             </h4>
@@ -404,7 +505,6 @@
         </div>
         <div class="col-md">
           <div class="about-block">
-            <img src="img/about_solution.svg" alt="Solutions" />
             <h4 class="about-header">We find simple solutions for complex problems</h4>
             <p>
               By combining our expertise and an entrepreneurial mindset together, we can come
@@ -426,8 +526,8 @@
     
 <header class="header-wrapper">
   <h2 class="header-subject">Technology &amp; Software</h2>
-  <h3 class="header-main">Expertise in a wide range of latest techology</h3>
-  <div class="header-desc">We select the tech stacks and systems that will get the best results for your project.</div>
+  <h3 class="header-main">We have expertise in a wide range of latest techology</h3>
+  
 </header>
 
 
@@ -487,14 +587,16 @@
 
 
 <!-- Contact Include -->
-<article id="contact" class="section-wrapper">
+<article id="contact" class="section-wrapper linked">
   <div class="section-inner">
     
     
 <header class="header-wrapper">
   <h2 class="header-subject">Contact Us</h2>
   <h3 class="header-main">Let&#39;s bring your ideas to life</h3>
+  
   <div class="header-desc">Email us and we will get back to you as soon as possible.</div>
+  
 </header>
 
 
@@ -511,12 +613,15 @@
   <div class="section-inner">
     <div class="footer-wrapper"></div>
       <ul class="footer-links list-unstyled">
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Past Projects</a></li>
-        <li><a href="#">Our Process</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Client Login</a></li>
+        <li class="sr-only"><a href="#hero" data-linked="true">Back to top</a></li>
+<li><a href="#services" data-linked="true">Our Services</a></li>
+<li><a href="#projects" data-linked="true">Past Projects</a></li>
+<li><a href="#process" data-linked="true">Our Process</a></li>
+<li><a href="#about" data-linked="true">About Us</a></li>
+<li class="sr-only"><a href="#tech" data-linked="true">Technology</a></li>
+<li><a href="#contact" data-linked="true">Contact Us</a></li>
+<li><a href="http://cloud.epikode.com" target="_blank">Client Login</a></li>
+
       </ul>
       <p class="copyright">Copyright Epikode Studio Inc. 2019 All rights reserved.</p>
     </div>
@@ -537,11 +642,11 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>

@@ -18,7 +18,7 @@
   max-width: 25rem;
 
   img {
-    width: 6rem;
+    width: 4rem;
   }
 
   .about-header {
@@ -27,6 +27,37 @@
   }
 
   p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+  }
+}
+
+.about-header {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    font-size: 1rem;
+  }
+}
+
+.about-wrapper > div {
+  div:nth-child(1) {
+    .about-header:before {
+      content: "01";
+    }
+  }
+
+  div:nth-child(2) {
+    .about-header:before {
+      content: "02";
+    }
+  }
+
+  div:nth-child(3) {
+    .about-header:before {
+      content: "03";
+    }
   }
 }

@@ -1,4 +1,4 @@
-<article id="contact" class="section-wrapper">
+<article id="contact" class="section-wrapper linked">
   <div class="section-inner">
     {% import 'partials/header.nunjucks' as sectionHead %}
     {{

@@ -12,6 +12,9 @@
 <!-- Projects Include -->
 {% include "sections/projects.nunjucks" %}
 
+<!-- Process Include -->
+{% include "sections/process.nunjucks" %}
+
 <!-- About Include -->
 {% include "sections/about.nunjucks" %}
 

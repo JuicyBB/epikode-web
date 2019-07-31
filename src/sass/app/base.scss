@@ -132,3 +132,44 @@ p {
     margin-left: 1em;
   }
 }
+
+// Accordion
+.accord-block {
+  .accord-content {
+    display: none;
+  }
+  &:first-child {
+    .accord-content {
+      display: block;
+    }
+  }
+}
+
+// Scroll Line
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -10.4rem;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 10.4rem;
+  }
+}
+
+.scroll-line {
+  background-color: rgba(#fff, 0.4);
+  width: 0.1rem;
+  height: 10.4rem;
+  overflow: hidden;
+  overflow: hidden;
+}
+.scroll-indicator {
+  width: 100%;
+  height: 200%;
+  background-position: 0 -10.4rem;
+  background-size: 100% 200%;
+  animation: scrolldown 2s cubic-bezier(0.5, 0, 0.3, 1) forwards infinite;
+  background: linear-gradient(to bottom, #ffffff 50%, rgba(255, 255, 255, 0) 50%);
+}

@@ -1,15 +1,13 @@
-<article class="section-wrapper">
+<article id="projects" class="section-wrapper linked">
   <div class="section-inner">
-    <div id="projects">
-      {% import 'partials/header.nunjucks' as sectionHead %}
-      {{
-        sectionHead.content(
-          "Past Projects",
-          "Featured projects & cases",
-          "You think it, we make it."
-        )
-      }}
-    </div>
+    {% import 'partials/header.nunjucks' as sectionHead %}
+    {{
+      sectionHead.content(
+        "Past Projects",
+        "Featured projects & cases",
+        "You think it, we make it."
+      )
+    }}
     <!-- PROJECT: Market clothing -->
     <section id="project_market" class="project-block">
       <div class="project-slider">
@@ -21,9 +19,7 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next">
-            click or drag &rarr;
-          </div>
+          <div class="slider-next"><span>&larr;</span>drag image</div>
           <header class="project-header">
             <h5 class="project-subject">Ecommerce Website</h5>
             <h4 class="project-name">Market Clothing</h4>
@@ -83,9 +79,7 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next">
-            click or drag &rarr;
-          </div>
+          <div class="slider-next"><span>&larr;</span>drag image</div>
           <header class="project-header">
             <h5 class="project-subject">Company Website</h5>
             <h4 class="project-name">Trilliant Wealth</h4>

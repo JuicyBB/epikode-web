@@ -12,8 +12,40 @@
   }
 
   .tech-header {
+    position: relative;
     font-size: 1.75rem;
     margin: $block-spacing 0;
     font-weight: $font-weight-bold;
+
+    &:before {
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+      font-size: 1rem;
+    }
+  }
+
+  &:nth-child(1) {
+    .tech-header:before {
+      content: "01";
+    }
+  }
+
+  &:nth-child(2) {
+    .tech-header:before {
+      content: "02";
+    }
+  }
+
+  &:nth-child(3) {
+    .tech-header:before {
+      content: "03";
+    }
+  }
+
+  &:nth-child(4) {
+    .tech-header:before {
+      content: "04";
+    }
   }
 }

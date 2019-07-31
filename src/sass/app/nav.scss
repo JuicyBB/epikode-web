@@ -84,10 +84,10 @@ body.nav-open {
   left: 0;
   top: -100%;
   z-index: 8;
-  transition: all 0.5s $transition-timing-function;
+  transition: all 400ms $transition-timing-function;
 
   * {
-    transition: all 0.5s $transition-timing-function;
+    transition: all 400ms $transition-timing-function;
   }
 
   .nav-bg {
@@ -115,6 +115,17 @@ body.nav-open {
     margin: 0;
     text-align: center;
     z-index: 2;
+
+    ul {
+      display: flex;
+      flex-flow: wrap;
+      width: 50%;
+      margin-left: 25%;
+
+      li {
+        flex-basis: 50%;
+      }
+    }
 
     li,
     h4 {
@@ -157,10 +168,16 @@ body.nav-open {
         bottom: 15%;
         left: 0;
         z-index: -1;
-        transition: all 0.5s $transition-timing-function;
+        transition: all 350ms $transition-timing-function;
       }
 
       &:hover:after {
+        width: 100%;
+      }
+    }
+
+    .active a {
+      &:after {
         width: 100%;
       }
     }

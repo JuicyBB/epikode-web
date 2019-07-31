@@ -1,13 +1,81 @@
-<article id="process" class="section-wrapper">
+<article id="process" class="section-wrapper linked">
   <div class="section-inner">
     {% import 'partials/header.nunjucks' as sectionHead %}
     {{
       sectionHead.content(
         "Our Process",
         "A solid process & good planning is halfway to success",
-        "We use agile workflow and solid development
-      standards to deliver success for all of our projects."
+        "We add value in every step of the way."
       )
     }}
+
+    <div class="process-wrapper">
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle active">Research</a>
+        <div class="accord-content active">
+          <div class="process-desc">
+            <img src="img/process_research.svg" alt="Research" />
+            <p>
+              The stage of discovering and researching, determines how the subsequent steps
+              will look like. The most important task at this point is to get a clear
+              understanding of your future website purposes, the main goals you wish to get,
+              and the target audience you want to attract to your site.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Prototype</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_prototype.svg" alt="Prototype" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Development</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_develop.svg" alt="Development" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Launch</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_launch.svg" alt="Launch" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process-block accord-block">
+        <a href="javascript:void(0)" class="accord-toggle">Grow</a>
+        <div class="accord-content">
+          <div class="process-desc">
+            <img src="img/process_grow.svg" alt="Grow" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+              repellat repudiandae quae, eum ipsa enim sint odit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </article>

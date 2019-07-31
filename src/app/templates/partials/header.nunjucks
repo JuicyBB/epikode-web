@@ -2,6 +2,8 @@
 <header class="header-wrapper">
   <h2 class="header-subject">{{ subject }}</h2>
   <h3 class="header-main">{{ header }}</h3>
+  {% if subheader %}
   <div class="header-desc">{{ subheader }}</div>
+  {% endif %}
 </header>
 {% endmacro %}

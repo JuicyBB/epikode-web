@@ -7,6 +7,33 @@
 
 /**
  * =======================
+ * Accordion
+ * =======================
+ */
+
+(function() {
+  $(".accord-block > .accord-toggle").on("click", (function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".accord-content")
+        .slideUp(300)
+        .removeClass("active");
+    } else {
+      $(".accord-block >  .accord-toggle").removeClass("active");
+      $(".accord-content").removeClass("active");
+      $(this).addClass("active");
+      $(".accord-content").slideUp(300);
+      $(this)
+        .siblings(".accord-content")
+        .slideDown(300)
+        .addClass("active");
+    }
+  }));
+})();
+
+/**
+ * =======================
  * Background Tween
  * =======================
  */
@@ -32,6 +59,7 @@
     project1: "#ad5851",
     project2: "#0c1938",
     about: color.cyan,
+    process: color.green,
     tech: color.cherry,
     contact: color.purple,
   };
@@ -48,8 +76,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.hero,
     })
-    // .setClassToggle("#hero-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -58,8 +85,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.services,
     })
-    // .setClassToggle("#services-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -68,8 +94,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project1,
     })
-    // .setClassToggle("#projects-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -78,7 +103,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project1,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -87,7 +112,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project2,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -96,7 +121,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.tech,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -105,7 +130,16 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.about,
     })
-    .addIndicators()
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#process",
+  })
+    .setTween("body, .dynamic-bg", {
+      backgroundColor: section.process,
+    })
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -114,7 +148,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.contact,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 })();
 
@@ -221,6 +255,58 @@
     prevArrow: "",
     nextArrow: $(".slider-next"),
   });
+
+  /**
+   * =======================
+   * Scroll Hint
+   * =======================
+   */
+
+  var lastId;
+  var menuItems = $("#nav-menu").find("[data-linked='true']");
+  var scrollHints = $("#hint-content").find(".scroll-hint span");
+
+  var scrollItems = menuItems.map((function() {
+    var item = $($(this).attr("href"));
+    if (item.length) {
+      return item;
+    }
+  }));
+
+  $(window).scroll((function() {
+    // Get container scroll position
+    var fromTop = $(this).scrollTop() + 10;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map((function() {
+      if ($(this).offset().top < fromTop) return this;
+    }));
+
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+      lastId = id;
+
+      // Set/remove active class
+      menuItems
+        .parent()
+        .removeClass("active")
+        .end()
+        .filter("[href='#" + id + "']")
+        .parent()
+        .addClass("active");
+
+      scrollHints
+        .parent()
+        .removeClass("active")
+        .end()
+        .filter("#" + id + "-hint")
+        .parent()
+        .addClass("active");
+    }
+  }));
 })();
 
 /**

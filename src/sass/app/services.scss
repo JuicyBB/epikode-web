@@ -15,7 +15,7 @@
   padding-right: $block-spacing;
 
   img {
-    width: 7rem;
+    width: 4rem;
   }
 }
 
@@ -31,15 +31,9 @@
 
   &:before {
     position: absolute;
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    line-height: 1;
-    bottom: -75%;
-    right: 80%;
-    font-size: 12rem;
-    color: rgba(0, 0, 0, 0.15);
-    z-index: -1;
-    transition: all 0.3s $transition-timing-function;
+    top: -1.5rem;
+    left: 0;
+    font-size: 1rem;
   }
 
   &:after {
@@ -55,20 +49,29 @@
   }
 }
 
-#service_web .service-headline:before {
-  content: "01";
-}
-
-#service_app .service-headline:before {
-  content: "02";
-}
-
-#service_ecommerce .service-headline:before {
-  content: "03";
-}
-
-#service_support .service-headline:before {
-  content: "04";
+.service-wrapper {
+  .service-block {
+    &:nth-child(1) {
+      .service-headline:before {
+        content: "01";
+      }
+    }
+    &:nth-child(2) {
+      .service-headline:before {
+        content: "02";
+      }
+    }
+    &:nth-child(3) {
+      .service-headline:before {
+        content: "03";
+      }
+    }
+    &:nth-child(4) {
+      .service-headline:before {
+        content: "04";
+      }
+    }
+  }
 }
 
 .service-desc {
@@ -91,10 +94,6 @@
 
 .service-info:hover {
   .service-headline {
-    &:before {
-      right: 128%;
-      color: rgba(0, 0, 0, 0.25);
-    }
     &:after {
       width: 100%;
     }

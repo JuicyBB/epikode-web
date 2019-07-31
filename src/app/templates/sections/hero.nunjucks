@@ -12,7 +12,9 @@
           ></span
           ><i></i> solutions.
         </h3>
-        <a href="#" class="btn-outline">Our Services<i class="fas fa-arrow-right mr-1"></i></a>
+        <a href="#services" class="btn-outline"
+          >Our Services<i class="fas fa-arrow-right mr-1"></i
+        ></a>
       </header>
     </div>
     <div class="scroll-mouse">
@@ -39,10 +41,21 @@
       <div class="nav-icon"></div>
     </button>
     <div class="section-hint">
-      <div class="hint-content">
-        <span id="hero-hint">Scroll Down</span>
-        <span id="services-hint">Our Services</span>
-        <span id="projects-hint">Past Work</span>
+      <div id="hint-content" class="hint-content">
+        <div class="scroll-hint active">
+          <span id="hero-hint">
+            Scroll down
+          </span>
+        </div>
+        <div class="scroll-hint"><span id="services-hint">Our Services</span></div>
+        <div class="scroll-hint"><span id="projects-hint">Past Work</span></div>
+        <div class="scroll-hint"><span id="process-hint">Our Process</span></div>
+        <div class="scroll-hint"><span id="about-hint">About Us</span></div>
+        <div class="scroll-hint"><span id="tech-hint">Technology</span></div>
+        <div class="scroll-hint"><span id="contact-hint">Contact Us</span></div>
+      </div>
+      <div class="scroll-line">
+        <div class="scroll-indicator"></div>
       </div>
     </div>
     <div class="brand">

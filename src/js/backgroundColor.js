@@ -25,6 +25,7 @@
     project1: "#ad5851",
     project2: "#0c1938",
     about: color.cyan,
+    process: color.green,
     tech: color.cherry,
     contact: color.purple,
   };
@@ -41,8 +42,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.hero,
     })
-    // .setClassToggle("#hero-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -51,8 +51,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.services,
     })
-    // .setClassToggle("#services-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -61,8 +60,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project1,
     })
-    // .setClassToggle("#projects-hint", "active")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -71,7 +69,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project1,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -80,7 +78,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.project2,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -89,7 +87,7 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.tech,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -98,7 +96,16 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.about,
     })
-    .addIndicators()
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#process",
+  })
+    .setTween("body, .dynamic-bg", {
+      backgroundColor: section.process,
+    })
+    // .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -107,6 +114,6 @@
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.contact,
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 })();

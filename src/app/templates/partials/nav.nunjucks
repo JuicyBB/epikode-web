@@ -2,14 +2,10 @@
   <div class="nav-bg layer1"></div>
   <div class="nav-bg layer2"></div>
   <div class="nav-bg layer3"></div>
-  <div class="nav-menu">
+  <div id="nav-menu" class="nav-menu">
     <h4><span>Epikode</span></h4>
     <ul class="list-unstyled">
-      <li><a href="#services">Our Services</a></li>
-      <li><a href="#projects">Past Projects</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#">Client Login</a></li>
+      {% include "partials/navlinks.nunjucks" %}
     </ul>
   </div>
 </nav>

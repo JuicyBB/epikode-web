@@ -171,6 +171,23 @@
 }
 
 .section-hint {
+  position: relative;
+
+  .scroll-hint {
+    position: absolute;
+    white-space: nowrap;
+    top: -0.8rem;
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .scroll-line {
+    margin-top: 8rem;
+  }
 }
 
 .hint-content {

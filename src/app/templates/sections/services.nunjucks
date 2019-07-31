@@ -1,4 +1,4 @@
-<article id="services" class="section-wrapper">
+<article id="services" class="section-wrapper linked">
   <div class="section-inner">
     {% import 'partials/header.nunjucks' as sectionHead %}
     {{
@@ -30,27 +30,6 @@
           </ul>
         </div>
       </section>
-      <section id="service_app" class="service-block">
-        <div class="block-image">
-          <img src="img/service_app.svg" alt="App development" />
-        </div>
-        <div class="service-info">
-          <h4 class="service-headline">App design &amp; development</h4>
-          <p class="service-desc">
-            Have an idea for an app? We are focused on creating elegant solutions to solve
-            complex problems. Whether you need a native or web-based application, we can create
-            exactly what you need with today’s most modern technology avaliable.
-          </p>
-          <ul class="list-unstyled section-list service-list">
-            <li>Hybrid Web Applications</li>
-            <li>iOS / Android Native Applications</li>
-            <li>Media Applications</li>
-            <li>UX & Wireframing</li>
-            <li>Cross platform API structures</li>
-            <li>B2B or Consumer Applications</li>
-          </ul>
-        </div>
-      </section>
 
       <section id="service_ecommerce" class="service-block">
         <div class="block-image">
@@ -73,6 +52,29 @@
           </ul>
         </div>
       </section>
+
+      <section id="service_app" class="service-block">
+        <div class="block-image">
+          <img src="img/service_app.svg" alt="App development" />
+        </div>
+        <div class="service-info">
+          <h4 class="service-headline">App design &amp; development</h4>
+          <p class="service-desc">
+            Have an idea for an app? We are focused on creating elegant solutions to solve
+            complex problems. Whether you need a native or web-based application, we can create
+            exactly what you need with today’s most modern technology avaliable.
+          </p>
+          <ul class="list-unstyled section-list service-list">
+            <li>Hybrid Web Applications</li>
+            <li>iOS / Android Native Applications</li>
+            <li>Media Applications</li>
+            <li>UX & Wireframing</li>
+            <li>Cross platform API structures</li>
+            <li>B2B or Consumer Applications</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="service_support" class="service-block">
         <div class="block-image">
           <img src="img/service_support.svg" alt="Maintenance support" />
