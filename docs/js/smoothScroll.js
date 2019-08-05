@@ -31,7 +31,7 @@
           event.preventDefault();
           $("html, body").animate(
             {
-              scrollTop: target.offset().top,
+              scrollTop: [target.offset().top, "swing"],
             },
             1000,
             (function() {

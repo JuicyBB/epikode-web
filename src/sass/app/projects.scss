@@ -39,18 +39,6 @@ $slide-spacing: #{($section-spacing-h + 0.1rem)};
 
 // Details
 //
-@keyframes arrowLeft {
-  0% {
-    transform: translate(-2rem, 0);
-  }
-  75% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-2rem, 0);
-  }
-}
-
 .project-details {
   position: relative;
   max-width: 30rem;
@@ -93,14 +81,14 @@ $slide-spacing: #{($section-spacing-h + 0.1rem)};
     font-weight: $font-weight-bold;
     color: #fff;
     text-transform: uppercase;
-    transition: color 0.3s ease-in;
+    transition: color 450ms $transition;
     margin-top: $block-spacing;
     display: inline-block;
 
     i {
       color: $highlight;
       margin-left: 0.25rem;
-      transition: margin 0.3s ease-in;
+      transition: margin 350ms $transition;
     }
 
     &:hover {

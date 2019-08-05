@@ -11,7 +11,9 @@
 
     <div class="contact-wrapper">
       <div class="email-label">Email us at</div>
-      <a class="epikode-contact" href="mailto:hello@epikode.com">hello@epikode.com</a>
+      <a class="epikode-contact text-link" href="mailto:hello@epikode.com">
+        hello@epikode.com
+      </a>
     </div>
   </div>
 </article>

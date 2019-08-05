@@ -13,13 +13,13 @@
    */
   var heading = baffle(".baffle");
   heading.set({
-    speed: 100,
-    characters: "EPIKODE",
+    speed: 80,
+    characters: "~+;$@!=*EPIKODE",
   });
   heading.start();
   setTimeout((function() {
     heading.reveal();
-  }), 1000);
+  }), 1200);
 
   /**
    * =======================
@@ -98,16 +98,20 @@
    * Slick Slider
    * =======================
    */
-  $(".js-slider").slick({
-    dots: false,
-    // infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    // centerMode: true,
-    variableWidth: true,
-    prevArrow: "",
-    nextArrow: $(".slider-next"),
-  });
+  $(".js-slider").each((function(index) {
+    $(this).attr("data-slider", index);
+    $(this).slick({
+      dots: false,
+      infinte: false,
+      speed: 300,
+      slidesToShow: 1,
+      variableWidth: true,
+      prevArrow: "",
+      nextArrow: $(this)
+        .parents(".project-block")
+        .find(".slider-next"),
+    });
+  }));
 
   /**
    * =======================
@@ -127,27 +131,33 @@
   }));
 
   $(window).scroll((function() {
-    // Get container scroll position
-    var fromTop = $(this).scrollTop() + 10;
+    var currentId;
+    var atBottomOfPage = $(this).scrollTop() + $(this).height() > $(document).height() - 300;
+    if (atBottomOfPage) {
+      currentId = "contact";
+    } else {
+      // Get container scroll position
+      var fromTop = $(this).scrollTop() + 1;
 
-    // Get id of current scroll item
-    var cur = scrollItems.map((function() {
-      if ($(this).offset().top < fromTop) return this;
-    }));
+      // Get id of current scroll item
+      var current = scrollItems.map((function() {
+        if ($(this).offset().top < fromTop) return this;
+      }));
 
-    // Get the id of the current element
-    cur = cur[cur.length - 1];
-    var id = cur && cur.length ? cur[0].id : "";
+      // Get the id of the current element
+      current = current[current.length - 1];
+      currentId = current && current.length ? current[0].id : "";
+    }
 
-    if (lastId !== id) {
-      lastId = id;
+    if (lastId !== currentId) {
+      lastId = currentId;
 
       // Set/remove active class
       menuItems
         .parent()
         .removeClass("active")
         .end()
-        .filter("[href='#" + id + "']")
+        .filter("[href='#" + currentId + "']")
         .parent()
         .addClass("active");
 
@@ -155,9 +165,23 @@
         .parent()
         .removeClass("active")
         .end()
-        .filter("#" + id + "-hint")
+        .filter("#" + currentId + "-hint")
         .parent()
         .addClass("active");
+    }
+  }));
+
+  /**
+   * =======================
+   * Hit bottom of page
+   * =======================
+   */
+  $(window).scroll((function() {
+    var atBottomOfPage = $(this).scrollTop() + $(this).height() > $(document).height() - 300;
+    if (atBottomOfPage) {
+      $(".section-hint").addClass("page-end");
+    } else {
+      $(".section-hint").removeClass("page-end");
     }
   }));
 })();

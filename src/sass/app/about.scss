@@ -11,23 +11,35 @@
 }
 
 .about-wrapper {
-  padding-bottom: $section-spacing-v;
+  // padding-bottom: $section-spacing-v;
 }
 
 .about-block {
-  max-width: 25rem;
-
-  img {
-    width: 4rem;
-  }
+  max-width: 35rem;
+  width: 75%;
 
   .about-header {
     font-size: 1.8rem;
     margin: $block-spacing 0;
+    transform: translateY(100%);
+    transition: transform 350ms $transition;
   }
 
   p {
     font-size: 1.25rem;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 350ms $transition;
+  }
+
+  &:hover {
+    .about-header {
+      transform: translateY(0);
+    }
+    p {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 

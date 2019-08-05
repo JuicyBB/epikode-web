@@ -1,8 +1,8 @@
-<li class="sr-only"><a href="#hero" data-linked="true">Back to top</a></li>
-<li><a href="#services" data-linked="true">Our Services</a></li>
-<li><a href="#projects" data-linked="true">Past Projects</a></li>
-<li><a href="#process" data-linked="true">Our Process</a></li>
-<li><a href="#about" data-linked="true">About Us</a></li>
-<li class="sr-only"><a href="#tech" data-linked="true">Technology</a></li>
-<li><a href="#contact" data-linked="true">Contact Us</a></li>
-<li><a href="http://cloud.epikode.com" target="_blank">Client Login</a></li>
+<li class="sr-only"><a class="text-link" href="#hero" data-linked="true">Back to top</a></li>
+<li><a class="text-link" href="#services" data-linked="true">Our Services</a></li>
+<li><a class="text-link" href="#projects" data-linked="true">Past Projects</a></li>
+<li><a class="text-link" href="#process" data-linked="true">Our Process</a></li>
+<li><a class="text-link" href="#about" data-linked="true">About Us</a></li>
+<li class="sr-only"><a class="text-link" href="#tech" data-linked="true">Technology</a></li>
+<li><a class="text-link" href="#contact" data-linked="true">Contact Us</a></li>
+<li><a class="text-link" href="http://cloud.epikode.com" target="_blank">Client Login</a></li>

@@ -37,8 +37,6 @@
     contact: color.purple,
   };
 
-  var duration = 0.5;
-
   var controller = new ScrollMagic.Controller({
     globalSceneOptions: { duration: 500 },
   });

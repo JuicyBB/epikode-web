@@ -20,6 +20,7 @@
             here to help. We will work with you to create the best solution for your business
             needs and budget with the most up-to-date technology.
           </p>
+          <div class="more-indicator d-none d-xs-block"></div>
           <ul class="list-unstyled section-list service-list">
             <li>CMS Solutions</li>
             <li>Business Websites</li>
@@ -42,6 +43,7 @@
             create are capable of coping with large streams of orders and visitor. We integrate
             direct payment systems and other programs depending on your business needs.
           </p>
+          <div class="more-indicator d-none d-xs-block"></div>
           <ul class="list-unstyled section-list service-list">
             <li>Shopify</li>
             <li>Wordpress Woo Commerce</li>
@@ -64,6 +66,7 @@
             complex problems. Whether you need a native or web-based application, we can create
             exactly what you need with today’s most modern technology avaliable.
           </p>
+          <div class="more-indicator d-none d-xs-block"></div>
           <ul class="list-unstyled section-list service-list">
             <li>Hybrid Web Applications</li>
             <li>iOS / Android Native Applications</li>
@@ -86,6 +89,7 @@
             maintenance packages includes content management, analytics, knowledge transfer &
             training, strategic advisement, hosting and dependency updates.
           </p>
+          <div class="more-indicator d-none d-xs-block"></div>
           <ul class="list-unstyled section-list service-list">
             <li>Domain and Email setup</li>
             <li>Cloud hosting setup (AWS)</li>

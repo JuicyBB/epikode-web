@@ -7,6 +7,8 @@ $section-spacing-v: 8rem;
 $mobile-section-spacing-h: 1.4rem;
 $mobile-section-spacing-v: 3rem;
 
+$bg-line-color: rgba(255, 255, 255, 0.1);
+
 // Hero
 //
 $hero-spacing-h: $section-spacing-h;
@@ -37,7 +39,7 @@ $nav-highlight: $highlight;
 $nav-toggle-size: 3em;
 $nav-toggle-color: #fff;
 $nav-toggle-bg: transparent;
-$transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+$transition: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Services
 $block-spacing: 2rem;

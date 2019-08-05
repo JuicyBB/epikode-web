@@ -17,7 +17,7 @@ body.nav-open {
   .nav-icon,
   .nav-icon:before,
   .nav-icon:after {
-    transition: all 0.3s $transition-timing-function;
+    transition: all 0.3s $transition;
   }
 
   &:hover {
@@ -84,10 +84,10 @@ body.nav-open {
   left: 0;
   top: -100%;
   z-index: 8;
-  transition: all 400ms $transition-timing-function;
+  transition: all 400ms $transition;
 
   * {
-    transition: all 400ms $transition-timing-function;
+    transition: all 400ms $transition;
   }
 
   .nav-bg {
@@ -158,26 +158,10 @@ body.nav-open {
       @include media-breakpoint-up(md) {
         font-size: 3rem;
       }
-
-      &:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        background-color: $nav-highlight;
-        height: 1rem;
-        bottom: 15%;
-        left: 0;
-        z-index: -1;
-        transition: all 350ms $transition-timing-function;
-      }
-
-      &:hover:after {
-        width: 100%;
-      }
     }
 
     .active a {
-      &:after {
+      &:before {
         width: 100%;
       }
     }

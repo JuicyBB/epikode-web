@@ -14,12 +14,14 @@
         <div class="js-slider">
           <div><img class="first" src="img/projects/market-d-01.png" alt="" /></div>
           <div><img src="img/projects/market-m-01.png" alt="" /></div>
+          <div><img src="img/projects/market-d-01.png" alt="" /></div>
+          <div><img src="img/projects/market-m-01.png" alt="" /></div>
         </div>
       </div>
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next"><span>&larr;</span>drag image</div>
+          <div class="slider-next"><span>&larr;</span>tap here / drag to slide</div>
           <header class="project-header">
             <h5 class="project-subject">Ecommerce Website</h5>
             <h4 class="project-name">Market Clothing</h4>
@@ -79,7 +81,7 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next"><span>&larr;</span>drag image</div>
+          <div class="slider-next"><span>&larr;</span>tap here / drag to slide</div>
           <header class="project-header">
             <h5 class="project-subject">Company Website</h5>
             <h4 class="project-name">Trilliant Wealth</h4>

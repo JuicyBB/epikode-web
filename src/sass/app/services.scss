@@ -35,18 +35,6 @@
     left: 0;
     font-size: 1rem;
   }
-
-  &:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    background-color: $highlight;
-    height: 0.4rem;
-    bottom: 8%;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s ease-in-out;
-  }
 }
 
 .service-wrapper {
@@ -81,26 +69,10 @@
 .service-list {
   border-left: 0.25rem solid $highlight;
   padding-left: $block-spacing;
-  opacity: 0;
-  transform: translateY(-20%);
-  transition: all 0.3s $transition-timing-function;
   display: flex;
   flex-flow: wrap;
 
   li {
     flex-basis: calc(50% - 1rem);
-  }
-}
-
-.service-info:hover {
-  .service-headline {
-    &:after {
-      width: 100%;
-    }
-  }
-
-  .service-list {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

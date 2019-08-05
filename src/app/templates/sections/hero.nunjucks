@@ -12,16 +12,16 @@
           ></span
           ><i></i> solutions.
         </h3>
-        <a href="#services" class="btn-outline"
-          >Our Services<i class="fas fa-arrow-right mr-1"></i
-        ></a>
+        <a href="#services" class="btn-outline">Our Services <span>&rarr;</span></a>
       </header>
     </div>
+    {#
     <div class="scroll-mouse">
       <div class="inner">
         <div class="wheel"></div>
       </div>
     </div>
+    #}
   </div>
 
   <div class="hero-layover layover-left">

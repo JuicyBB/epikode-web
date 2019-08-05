@@ -12,12 +12,16 @@
     color: #fff;
     font-size: 2.25rem;
     font-weight: $font-weight-bold;
-    transition: all 0.3s $transition-timing-function;
+    transition: all 0.3s $transition;
     margin-top: 2rem;
+    padding-top: 2rem;
+
+    // border-top: 1px solid #fff;
+    // display: block;
 
     &:before {
       position: absolute;
-      top: -1rem;
+      top: 0.5rem;
       left: 0;
       font-size: 1rem;
     }
