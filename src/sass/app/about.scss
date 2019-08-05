@@ -10,10 +10,6 @@
   }
 }
 
-.about-wrapper {
-  // padding-bottom: $section-spacing-v;
-}
-
 .about-block {
   max-width: 35rem;
   width: 75%;
@@ -21,7 +17,7 @@
   .about-header {
     font-size: 1.8rem;
     margin: $block-spacing 0;
-    transform: translateY(100%);
+    transform: translateY(5rem);
     transition: transform 350ms $transition;
   }
 

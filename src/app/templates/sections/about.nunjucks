@@ -10,7 +10,7 @@
     }}
 
     <div class="about-wrapper">
-      <div class="row">
+      <div class="row align-items-start">
         <div class="col-md">
           <div class="about-block">
             <h4 class="about-header">We don't do everything, but what we do, we do well</h4>

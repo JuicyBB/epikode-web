@@ -9,6 +9,21 @@
 }
 
 .epikode-contact {
-  font-size: 5.5rem;
   font-weight: $font-weight-bold;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 5.5rem;
+  }
+
+  @include media-breakpoint-only(md) {
+    font-size: 3.5rem;
+  }
+
+  @include media-breakpoint-only(sm) {
+    font-size: 2rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 1.75rem;
+  }
 }

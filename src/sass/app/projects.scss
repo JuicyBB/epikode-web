@@ -10,13 +10,14 @@
 //
 
 $slide-spacing: #{($section-spacing-h + 0.1rem)};
+$mobile-slide-spacing: #{($mobile-section-spacing-h + 0.1rem)};
 
 .project-slider {
   position: relative;
   margin: 0 -$slide-spacing;
 
   @include media-breakpoint-down(md) {
-    margin: 0 -$slide-spacing;
+    margin: 0 -$mobile-slide-spacing;
   }
 
   img {
@@ -27,6 +28,10 @@ $slide-spacing: #{($section-spacing-h + 0.1rem)};
 
   img.first {
     padding-left: $slide-spacing;
+
+    @include media-breakpoint-down(md) {
+      padding-left: $mobile-slide-spacing;
+    }
   }
 }
 

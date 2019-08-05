@@ -29,54 +29,60 @@ p {
 .section-wrapper {
   padding: 0 $section-spacing-h;
   position: relative;
-  // min-height: 80vh;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     padding: 0 $mobile-section-spacing-h;
   }
 }
 
-.section-inner {
-  position: relative;
-  height: 100%;
-  border-left: 0.1rem solid $bg-line-color;
-  border-right: 0.1rem solid $bg-line-color;
-
-  &:before {
-    position: absolute;
-    width: 50%;
+@include media-breakpoint-up(md) {
+  .section-inner {
+    position: relative;
     height: 100%;
-    left: 50%;
-    top: 0;
-    margin-left: -25%;
     border-left: 0.1rem solid $bg-line-color;
     border-right: 0.1rem solid $bg-line-color;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-  }
 
-  &:after {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    width: 0.1rem;
-    background-color: $bg-line-color;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
+    @include media-breakpoint-up(lg) {
+      &:before {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        margin-left: -25%;
+        border-left: 0.1rem solid $bg-line-color;
+        border-right: 0.1rem solid $bg-line-color;
+        content: "";
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      width: 0.1rem;
+      background-color: $bg-line-color;
+      content: "";
+      pointer-events: none;
+      z-index: 1;
+    }
   }
 }
 
 // Header Styles
 //
 .header-wrapper {
-  @include media-breakpoint-up(md) {
-    padding: $section-spacing-v 0;
+  @include media-breakpoint-up(lg) {
     width: 40%;
     min-width: 44rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: $section-spacing-v 0;
   }
 
   @include media-breakpoint-down(sm) {
