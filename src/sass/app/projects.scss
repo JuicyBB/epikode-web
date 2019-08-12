@@ -1,3 +1,7 @@
+.project-wrapper {
+  margin-bottom: $section-spacing-v;
+}
+
 .project-block {
   padding: $mobile-section-spacing-v 0;
 
@@ -26,24 +30,17 @@
 
   img {
     display: block;
-    margin-right: 1em;
 
     @include media-breakpoint-down(md) {
       height: calc(80vw * #{$aspectRatio});
+      padding-left: $mobile-slide-spacing;
     }
 
     @include media-breakpoint-up(lg) {
+      margin-right: 1em;
       height: 38rem;
-    }
 
-    &.first {
-      padding-left: $mobile-slide-spacing;
-
-      @include media-breakpoint-only(md) {
-        padding-left: 0;
-      }
-
-      @include media-breakpoint-up(lg) {
+      &.first {
         padding-left: $slide-spacing;
       }
     }

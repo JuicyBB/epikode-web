@@ -4,7 +4,7 @@
     {{
       sectionHead.content(
         "About Epikode",
-        "We are a small dedicated team located in Vancouver, BC. When you hire Epikode, you are partnering with a team who is passionate about tecnology, user experience, and code quality.",
+        "We are a small dedicated team located in Vancouver, BC. When you hire Epikode, you are partnering with a team who is passionate about technology, user experience, and code quality.",
         ""
       )
     }}
@@ -23,9 +23,9 @@
           No matter the size of the project, quality is our focus
         </h4>
         <p>
-          We are obessed with design and code quality. We stay up to date with tech trends so
+          We are obsessed with design and code quality. We stay up to date with tech trends so
           we can use the latest and greatest technology available. We don’t just do the minimal
-          to get something done. We make sure the work is done the right way from the begining
+          to get something done. We make sure the work is done the right way from the beginning
           to end.
         </p>
       </div>

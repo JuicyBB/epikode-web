@@ -2,9 +2,9 @@
   <aside class="hero-layover layover-left">
     <div class="service-taglines">
       <ul class="list-unstyled">
-        <li>UX design</li>
         <li>Full stack development</li>
-        <li>Cloud depolyment</li>
+        <li>UX design</li>
+        <li>Cloud deployment</li>
         <li>Hosting service</li>
       </ul>
     </div>

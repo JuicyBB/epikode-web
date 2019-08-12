@@ -102,7 +102,7 @@
     $(this).attr("data-slider", index);
     $(this).slick({
       dots: false,
-      infinte: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
       variableWidth: true,

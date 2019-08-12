@@ -17,9 +17,11 @@
   }
 }
 
-// 3 column grid
-@include media-breakpoint-up(lg) {
-  .about-wrapper {
+.about-wrapper {
+  margin-bottom: $section-spacing-v;
+
+  // 2 column grid
+  @include media-breakpoint-up(lg) {
     display: flex;
     flex-flow: wrap;
   }
