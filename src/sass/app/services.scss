@@ -3,16 +3,33 @@
 }
 
 .service-block {
-  padding: $section-spacing-v 0;
+  padding: $mobile-section-spacing-v 0;
   display: flex;
   align-items: flex-start;
+
+  @include media-breakpoint-up(sm) {
+    padding: $section-spacing-v 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: row-reverse;
+  }
+
+  @include pseudo-number(4, service-headline);
 }
 
 .block-image {
-  flex-basis: 25%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: $block-spacing;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 $block-spacing;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex-basis: 25%;
+  }
 
   img {
     width: 4rem;
@@ -20,59 +37,51 @@
 }
 
 .service-info {
-  flex-basis: 50%;
-}
-
-.service-headline {
-  position: relative;
-  font-size: 2.25rem;
-  margin-bottom: $block-spacing;
-  display: inline-block;
-
-  &:before {
-    position: absolute;
-    top: -1.5rem;
-    left: 0;
-    font-size: 1rem;
+  @include media-breakpoint-up(xl) {
+    flex-basis: 50%;
   }
 }
 
-.service-wrapper {
-  .service-block {
-    &:nth-child(1) {
-      .service-headline:before {
-        content: "01";
-      }
-    }
-    &:nth-child(2) {
-      .service-headline:before {
-        content: "02";
-      }
-    }
-    &:nth-child(3) {
-      .service-headline:before {
-        content: "03";
-      }
-    }
-    &:nth-child(4) {
-      .service-headline:before {
-        content: "04";
-      }
-    }
+.service-headline {
+  font-size: 1.125rem;
+  margin-bottom: $mobile-block-spacing;
+  display: inline-block;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 2.25rem;
+    margin-bottom: $block-spacing;
   }
 }
 
 .service-desc {
-  margin-bottom: $block-spacing;
+  margin-bottom: $mobile-block-spacing;
+
+  @include media-breakpoint-up(md) {
+    padding-left: $block-spacing;
+  }
 }
 
 .service-list {
-  border-left: 0.25rem solid $highlight;
-  padding-left: $block-spacing;
+  border-left: 0.125rem solid $highlight;
+  padding-left: $mobile-block-spacing;
   display: flex;
   flex-flow: wrap;
 
+  @include media-breakpoint-up(md) {
+    padding-left: $block-spacing;
+  }
+
   li {
-    flex-basis: calc(50% - 1rem);
+    @include media-breakpoint-down(md) {
+      flex-basis: 50%;
+    }
+
+    @include media-breakpoint-only(lg) {
+      flex-basis: 40%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      flex-basis: calc(50% - 1rem);
+    }
   }
 }

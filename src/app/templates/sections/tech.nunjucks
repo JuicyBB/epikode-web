@@ -4,7 +4,7 @@
     {{
       sectionHead.content(
         "Technology & Software",
-        "We have expertise in a wide range of latest techology",
+        "Our wide range of techology expertise provides our clients with a competitive edge",
         ""
       )
     }}
@@ -30,7 +30,7 @@
           <li>MongoDB</li>
           <li>MySQL</li>
           <li>Amazon web service (AWS)</li>
-          <li>Single page applications (SPA)</li>
+          <li>Single page applications</li>
           <li>API driven development</li>
           <li>Heroku cloud platform</li>
           <li>Automated Deployments</li>

@@ -2,15 +2,18 @@
   <div class="section-inner">
     <div class="hero-content">
       <header class="headline">
+        <div class="brand-mobile">
+          <img class="logo" src="img/epikode-logo.svg" alt="Epikode" />
+        </div>
         <h2 class="baffle">Epikode</h2>
-        <h1>Vancouver based digital design and development agency.</h1>
+        <h1>Vancouver based digital design & development agency.</h1>
         <h3>
           We build custom
           <span
             id="scroll-text"
             data-items="website, ecommerce, web app, mobile app, marketing"
-          ></span
-          ><i></i> solutions.
+          ></span>
+          <i></i><span class="tail"> solutions.</span>
         </h3>
         <a href="#services" class="btn-outline">Our Services <span>&rarr;</span></a>
       </header>

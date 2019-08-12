@@ -1,3 +1,5 @@
+// Navigation styles
+//
 body.nav-open {
   overflow: hidden;
 }
@@ -9,21 +11,36 @@ body.nav-open {
   color: inherit;
   cursor: pointer;
   border: 0;
-  width: $nav-toggle-size;
-  height: $nav-toggle-size;
   background: none;
   z-index: 9;
+
+  @include media-breakpoint-down(md) {
+    transition: background-color 500ms $transition;
+    transition-delay: 800ms;
+    background-color: $cherry;
+    width: $nav-toggle-mobile-size;
+    height: $nav-toggle-mobile-size;
+
+    &.open {
+      background-color: #333;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: $nav-toggle-size;
+    height: $nav-toggle-size;
+
+    &:hover {
+      .nav-icon {
+        transform: scale(0.85) rotate(0deg);
+      }
+    }
+  }
 
   .nav-icon,
   .nav-icon:before,
   .nav-icon:after {
     transition: all 0.3s $transition;
-  }
-
-  &:hover {
-    .nav-icon {
-      transform: scale(0.85) rotate(0deg);
-    }
   }
 
   .nav-icon {
@@ -33,10 +50,14 @@ body.nav-open {
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 80%;
-    height: 4px;
+    width: 50%;
+    height: 0.25rem;
     background: $nav-toggle-color;
     display: inline-block;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
 
     &::before,
     &::after {
@@ -49,11 +70,19 @@ body.nav-open {
     }
 
     &::before {
-      top: -$nav-toggle-size/4.5;
+      top: -$nav-toggle-mobile-size/5;
+
+      @include media-breakpoint-up(lg) {
+        top: -$nav-toggle-size/4.5;
+      }
     }
 
     &::after {
-      top: $nav-toggle-size/4.5;
+      top: $nav-toggle-mobile-size/5;
+
+      @include media-breakpoint-up(lg) {
+        top: -$nav-toggle-size/4.5;
+      }
     }
   }
 
@@ -98,12 +127,21 @@ body.nav-open {
     top: 0;
 
     &.layer1 {
-      width: 6.4rem;
-      background: $nav-bg1;
+      width: $mobile-nav-animation-width;
+      background: $mobile-nav-bg1;
+
+      @include media-breakpoint-up(md) {
+        width: $nav-animation-width;
+        background: $nav-bg1;
+      }
     }
 
     &.layer2 {
-      background: $nav-bg2;
+      background: $mobile-nav-bg2;
+
+      @include media-breakpoint-up(md) {
+        background: $nav-bg2;
+      }
     }
 
     &.layer3 {
@@ -112,15 +150,18 @@ body.nav-open {
   }
 
   .nav-menu {
-    margin: 0;
-    text-align: center;
     z-index: 2;
+    margin: 0 $mobile-section-spacing-h;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+      width: 50%;
+      margin: 0 25%;
+    }
 
     ul {
       display: flex;
       flex-flow: wrap;
-      width: 50%;
-      margin-left: 25%;
 
       li {
         flex-basis: 50%;
@@ -134,7 +175,7 @@ body.nav-open {
 
     h4 {
       font-size: 0.75rem;
-      font-weight: 800;
+      font-weight: $font-weight-bold;
       color: $highlight;
       text-transform: uppercase;
       margin-bottom: 2rem;
@@ -149,14 +190,15 @@ body.nav-open {
     a {
       display: inline-block;
       transform: translateY(200%);
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 1.25rem;
+      font-weight: $font-weight-semibold;
       color: #fff;
       margin: 0.5rem 0;
       position: relative;
 
       @include media-breakpoint-up(md) {
         font-size: 3rem;
+        font-weight: $font-weight-bold;
       }
     }
 

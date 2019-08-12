@@ -11,68 +11,99 @@
 
     <div class="process-wrapper">
       <div class="process-block accord-block">
-        <a href="javascript:void(0)" class="accord-toggle active">Research</a>
-        <div class="accord-content active">
+        <a href="javascript:void(0)" class="accord-toggle active" data-toggle="#research"
+          >Research</a
+        >
+        <div id="research" class="accord-content active">
           <div class="process-desc">
-            <img src="img/process_research.svg" alt="Research" />
-            <p>
-              The stage of discovering and researching, determines how the subsequent steps
-              will look like. The most important task at this point is to get a clear
-              understanding of your future website purposes, the main goals you wish to get,
-              and the target audience you want to attract to your site.
-            </p>
+            <div class="image-wrapper">
+              <img src="img/process_research.svg" alt="Research" />
+            </div>
+            <div class="content-wrapper">
+              <h4 class="process-title">Research</h4>
+              <p>
+                The stage of discovering and researching, determines how the subsequent steps
+                will look like. The most important task at this point is to get a clear
+                understanding of your future website purposes, the main goals you wish to get,
+                and the target audience you want to attract to your site.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="process-block accord-block">
-        <a href="javascript:void(0)" class="accord-toggle">Prototype</a>
-        <div class="accord-content">
+        <a href="javascript:void(0)" class="accord-toggle" data-toggle="#prototype"
+          >Prototype</a
+        >
+        <div id="prototype" class="accord-content">
           <div class="process-desc">
-            <img src="img/process_prototype.svg" alt="Prototype" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
-              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
-              repellat repudiandae quae, eum ipsa enim sint odit?
-            </p>
+            <div class="image-wrapper">
+              <img src="img/process_prototype.svg" alt="Prototype" />
+            </div>
+            <div class="content-wrapper">
+              <h4 class="process-title">Prototype</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+                error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+                repellat repudiandae quae, eum ipsa enim sint odit?
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="process-block accord-block">
-        <a href="javascript:void(0)" class="accord-toggle">Development</a>
-        <div class="accord-content">
+        <a href="javascript:void(0)" class="accord-toggle" data-toggle="#development"
+          >Development</a
+        >
+        <div id="development" class="accord-content">
           <div class="process-desc">
-            <img src="img/process_develop.svg" alt="Development" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
-              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
-              repellat repudiandae quae, eum ipsa enim sint odit?
-            </p>
+            <div class="image-wrapper">
+              <img src="img/process_develop.svg" alt="Development" />
+            </div>
+            <div class="content-wrapper">
+              <h4 class="process-title">Development</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+                error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+                repellat repudiandae quae, eum ipsa enim sint odit?
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="process-block accord-block">
-        <a href="javascript:void(0)" class="accord-toggle">Launch</a>
-        <div class="accord-content">
+        <a href="javascript:void(0)" class="accord-toggle" data-toggle="#launch">Launch</a>
+        <div id="launch" class="accord-content">
           <div class="process-desc">
-            <img src="img/process_launch.svg" alt="Launch" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
-              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
-              repellat repudiandae quae, eum ipsa enim sint odit?
-            </p>
+            <div class="image-wrapper">
+              <img src="img/process_launch.svg" alt="Launch" />
+            </div>
+            <div class="content-wrapper">
+              <h4 class="process-title">Launch</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+                error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+                repellat repudiandae quae, eum ipsa enim sint odit?
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="process-block accord-block">
-        <a href="javascript:void(0)" class="accord-toggle">Grow</a>
-        <div class="accord-content">
+        <a href="javascript:void(0)" class="accord-toggle" data-toggle="#grow">Grow</a>
+        <div id="grow" class="accord-content">
           <div class="process-desc">
-            <img src="img/process_grow.svg" alt="Grow" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
-              error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
-              repellat repudiandae quae, eum ipsa enim sint odit?
-            </p>
+            <div class="image-wrapper">
+              <img src="img/process_grow.svg" alt="Grow" />
+            </div>
+            <div class="content-wrapper">
+              <h4 class="process-title">Grow</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum assumenda
+                error! Porro saepe commodi, cupiditate dolore corrupti sit. Magni eveniet quasi
+                repellat repudiandae quae, eum ipsa enim sint odit?
+              </p>
+            </div>
           </div>
         </div>
       </div>

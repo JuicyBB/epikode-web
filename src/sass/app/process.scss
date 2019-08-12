@@ -1,76 +1,124 @@
 .process-wrapper {
   margin-bottom: $section-spacing-v;
 
-  margin-left: 25%;
-  width: 50%;
+  // Horizontal layout
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 26rem;
+  }
 }
 
 .process-block {
+  // Vertical layout
+  @include media-breakpoint-down(md) {
+    border-bottom: 1px solid #fff;
+    padding: 1.75rem 0 0;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: 2.75rem 0 0.75rem;
+  }
+
+  // Horizontal layout
+  @include media-breakpoint-up(lg) {
+    flex-basis: 18%;
+  }
+
   .accord-toggle {
     position: relative;
-    display: inline-block;
+    display: block;
     color: #fff;
-    font-size: 2.25rem;
     font-weight: $font-weight-bold;
-    transition: all 0.3s $transition;
-    margin-top: 2rem;
-    padding-top: 2rem;
 
-    // border-top: 1px solid #fff;
-    // display: block;
+    // Vertical layout
+    @include media-breakpoint-down(md) {
+      font-size: 1.125rem;
+      padding-bottom: 0.75rem;
+    }
 
-    &:before {
+    // Horizontal layout
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #fff;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        background-color: $highlight;
+        transition: width 500ms $transition;
+      }
+
+      &.active,
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include pseudo-number(5, accord-toggle);
+
+  // Horizontal layout
+  @include media-breakpoint-up(lg) {
+    .accord-content {
       position: absolute;
-      top: 0.5rem;
+      top: 8rem;
       left: 0;
-      font-size: 1rem;
-    }
-
-    &:hover:not(.active) {
-      padding-left: 2rem;
-    }
-  }
-
-  &:nth-child(1) {
-    .accord-toggle:before {
-      content: "01";
-    }
-  }
-
-  &:nth-child(2) {
-    .accord-toggle:before {
-      content: "02";
-    }
-  }
-
-  &:nth-child(3) {
-    .accord-toggle:before {
-      content: "03";
-    }
-  }
-
-  &:nth-child(4) {
-    .accord-toggle:before {
-      content: "04";
-    }
-  }
-
-  &:nth-child(5) {
-    .accord-toggle:before {
-      content: "05";
     }
   }
 }
 
 .process-desc {
-  display: flex;
-  align-items: flex-start;
-  margin: 1rem 0;
-  padding: 3rem 0 3rem 4rem;
-  border-left: 2px solid #fff;
+  .image-wrapper {
+    display: none;
+  }
 
-  img {
-    width: 5rem;
-    margin-right: 4rem;
+  // Horizontal layout
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: flex-start;
+
+    .image-wrapper {
+      display: block;
+    }
+
+    img {
+      width: 4rem;
+
+      @include media-breakpoint-only(lg) {
+        margin-right: 4rem;
+      }
+    }
+  }
+
+  // Display title for lg+ (Horizontal)
+  .process-title {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+
+  // Pushed layout (Horizontal)
+  @include media-breakpoint-up(xl) {
+    .image-wrapper {
+      flex-basis: 25%;
+      justify-content: flex-end;
+      display: flex;
+      padding-right: 2rem;
+    }
+    .content-wrapper {
+      flex-basis: 50%;
+    }
   }
 }

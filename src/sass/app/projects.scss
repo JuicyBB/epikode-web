@@ -1,5 +1,9 @@
 .project-block {
-  padding: $section-spacing-v 0;
+  padding: $mobile-section-spacing-v 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: $section-spacing-v 0;
+  }
 
   &#project_market {
     padding-top: 0;
@@ -8,29 +12,40 @@
 
 // Project slider
 //
-
-$slide-spacing: #{($section-spacing-h + 0.1rem)};
-$mobile-slide-spacing: #{($mobile-section-spacing-h + 0.1rem)};
-
 .project-slider {
   position: relative;
-  margin: 0 -$slide-spacing;
+  margin: 0 -#{$mobile-slide-spacing};
 
-  @include media-breakpoint-down(md) {
-    margin: 0 -$mobile-slide-spacing;
+  @include media-breakpoint-only(md) {
+    margin: 0 -#{$tablet-slide-spacing};
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 -#{$slide-spacing};
   }
 
   img {
     display: block;
-    height: 38rem;
     margin-right: 1em;
-  }
-
-  img.first {
-    padding-left: $slide-spacing;
 
     @include media-breakpoint-down(md) {
+      height: calc(80vw * #{$aspectRatio});
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 38rem;
+    }
+
+    &.first {
       padding-left: $mobile-slide-spacing;
+
+      @include media-breakpoint-only(md) {
+        padding-left: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-left: $slide-spacing;
+      }
     }
   }
 }
@@ -38,33 +53,50 @@ $mobile-slide-spacing: #{($mobile-section-spacing-h + 0.1rem)};
 // Project info wrapper
 //
 .project-info-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 // Details
 //
 .project-details {
   position: relative;
-  max-width: 30rem;
-  margin-top: -8rem;
-  padding: 3.5rem;
+  padding-top: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 30rem;
+    margin-top: -8rem;
+    padding: 3.5rem;
+  }
 
   .slider-next {
-    font-size: 0.75rem;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0;
+    font-size: 0.625rem;
     letter-spacing: 2px;
-    transition: color 0.3s ease-in;
 
-    &:hover {
-      color: $highlight;
+    @include media-breakpoint-down(sm) {
+      .extra-text {
+        display: none;
+      }
     }
 
-    span {
+    @include media-breakpoint-up(md) {
+      font-size: 0.75rem;
+      transition: color 0.3s ease-in;
+      padding-right: 1.5rem;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+
+    .arrow {
       display: inline-block;
       margin-right: 0.5rem;
       animation: arrowLeft 1.5s cubic-bezier(0.5, 0, 0.3, 1) forwards infinite;
@@ -72,34 +104,48 @@ $mobile-slide-spacing: #{($mobile-section-spacing-h + 0.1rem)};
   }
 
   .project-subject {
-    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
     color: $highlight;
     margin-bottom: 0.75rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.125rem;
+    }
   }
 
   .project-name {
-    font-size: 2.25rem;
-    margin-bottom: $block-spacing;
+    font-size: 1.25rem;
+    margin-bottom: $mobile-block-spacing;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.25rem;
+      margin-bottom: $block-spacing;
+    }
   }
 
   .project-link {
-    font-weight: $font-weight-bold;
-    color: #fff;
-    text-transform: uppercase;
-    transition: color 450ms $transition;
-    margin-top: $block-spacing;
-    display: inline-block;
+    font-size: 0.875rem;
+    margin-top: 1rem;
 
-    i {
-      color: $highlight;
+    span {
       margin-left: 0.25rem;
       transition: margin 350ms $transition;
     }
 
-    &:hover {
-      color: $highlight;
-      i {
-        margin-left: 0.75rem;
+    @include media-breakpoint-up(md) {
+      transition: color 450ms $transition;
+      font-size: 1rem;
+      margin-top: 2rem;
+
+      &:before {
+        z-index: 1;
+      }
+
+      &:hover {
+        span {
+          margin-left: 0.75rem;
+        }
       }
     }
   }
@@ -109,42 +155,26 @@ $mobile-slide-spacing: #{($mobile-section-spacing-h + 0.1rem)};
 //
 .project-specs {
   display: flex;
-  flex-basis: 50%;
   flex-wrap: wrap;
   margin-top: 5rem;
+
+  @include media-breakpoint-up(lg) {
+    flex-basis: 50%;
+  }
 
   .specs-block {
     flex: 0 50%;
 
-    &:nth-child(1) {
-      .spec-type:before {
-        content: "01";
-      }
-    }
-
-    &:nth-child(2) {
-      .spec-type:before {
-        content: "02";
-      }
-    }
-
-    &:nth-child(3) {
-      .spec-type:before {
-        content: "03";
-      }
-    }
+    @include pseudo-number(3, spec-title, 0.75rem);
   }
 
-  .spec-type {
-    position: relative;
+  .spec-title {
+    font-size: 0.75rem;
     text-transform: uppercase;
-    color: rgba(#fff, 0.6);
+    color: rgba(#fff, 0.65);
 
-    &:before {
-      position: absolute;
-      top: -1rem;
-      left: 0;
-      font-size: 0.75rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
     }
   }
 

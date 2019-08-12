@@ -1,15 +1,24 @@
 .contact-wrapper {
-  padding-bottom: $section-spacing-v;
+  padding: $mobile-section-spacing-v 0 ($mobile-section-spacing-v * 2);
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: $section-spacing-v;
+  }
 }
 
 .email-label {
   font-weight: $font-weight-semibold;
-  font-size: 1.25em;
+  font-size: 0.875rem;
   text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
 }
 
 .epikode-contact {
-  font-weight: $font-weight-bold;
+  text-transform: lowercase;
+  margin-left: -0.3rem;
 
   @include media-breakpoint-up(lg) {
     font-size: 5.5rem;

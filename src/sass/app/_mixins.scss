@@ -21,3 +21,29 @@
     transform: translate(0, 0);
   }
 }
+
+@mixin pseudo-number($count, $class-slug, $size: 1rem, $mobile-size: 0.625rem) {
+  .#{$class-slug} {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      font-size: $mobile-size;
+
+      @include media-breakpoint-up(md) {
+        top: -1.5rem;
+        font-size: $size;
+      }
+    }
+  }
+
+  @for $i from 1 through $count {
+    &:nth-child(#{$i}) {
+      .#{$class-slug}:before {
+        content: "0#{$i}";
+      }
+    }
+  }
+}

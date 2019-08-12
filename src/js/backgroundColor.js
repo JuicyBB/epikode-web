@@ -6,32 +6,33 @@
 
 (function() {
   var color = {
-    blue: "#0d245f",
-    purple: "#3A0D5A",
+    blue: "#0a268c",
+    purple: "#37005f",
     cherry: "#93104F",
     pink: "#E53655",
     red: "#AB1515",
-    orange: "#DA6F0D",
+    orange: "#c24e16",
     yellow: "#FFB402",
-    green: "#4D7B1E",
+    green: "#478804",
     teal: "#0AB092",
-    cyan: "#0A88B0",
+    cyan: "#048094",
     gray: "#212121",
   };
 
   var section = {
     hero: color.purple,
-    services: color.blue,
-    project1: "#ad5851",
-    project2: "#0c1938",
-    about: color.cyan,
-    process: color.green,
-    tech: color.cherry,
+    services: color.cherry,
+    service_app: color.orange,
+    project1: "#944f48",
+    project2: "#041835",
+    about: color.green,
+    process: color.cyan,
+    tech: color.blue,
     contact: color.purple,
   };
 
   var controller = new ScrollMagic.Controller({
-    globalSceneOptions: { duration: 500 },
+    globalSceneOptions: { duration: 400 },
   });
 
   new ScrollMagic.Scene({
@@ -48,6 +49,15 @@
   })
     .setTween("body, .dynamic-bg", {
       backgroundColor: section.services,
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#service_app",
+  })
+    .setTween("body, .dynamic-bg", {
+      backgroundColor: section.service_app,
     })
     // .addIndicators()
     .addTo(controller);

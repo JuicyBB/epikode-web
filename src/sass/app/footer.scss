@@ -1,6 +1,10 @@
 // Footer
 .footer-wrapper {
-  padding: 3rem 0;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem 0;
+  }
 }
 
 .footer-links {
@@ -9,23 +13,29 @@
   max-width: 30rem;
 
   li {
-    flex-basis: 25%;
+    flex-basis: 33.33%;
+
+    @include media-breakpoint-up(md) {
+      flex-basis: 25%;
+    }
   }
 
   a {
-    color: #fff;
-    font-weight: $font-weight-semibold;
-    text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 
-    &:hover {
-      color: $highlight;
+    @include media-breakpoint-up(md) {
+      font-size: 0.875rem;
     }
   }
 }
 
 .copyright {
-  font-size: 0.875rem;
+  font-size: 0.625rem;
   color: rgba(#fff, 0.65);
-  margin: 2rem 0;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.875rem;
+    margin: 2rem 0;
+  }
 }

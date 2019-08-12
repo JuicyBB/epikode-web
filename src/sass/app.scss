@@ -1,11 +1,16 @@
+// Dependencies
 @import "bootstrap/functions";
 @import "app/colors";
 @import "app/variables";
 @import "app/constants";
-
-@import "bootstrap/bootstrap";
-
 @import "app/mixins";
+
+// Vendors
+@import "bootstrap/bootstrap";
+@import "../../node_modules/animate.css/animate.css";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+// Core app
 @import "app/base";
 @import "app/hero";
 @import "app/nav";

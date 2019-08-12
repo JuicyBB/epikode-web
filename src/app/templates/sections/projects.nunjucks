@@ -21,7 +21,10 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next"><span>&larr;</span>tap here / drag to slide</div>
+          <div class="slider-next">
+            <span class="arrow">&larr;</span
+            ><span class="extra-text">tap here / drag to </span>slide
+          </div>
           <header class="project-header">
             <h5 class="project-subject">Ecommerce Website</h5>
             <h4 class="project-name">Market Clothing</h4>
@@ -32,15 +35,15 @@
             with quality. They wanted their consumer shopping experience to be fun and
             uncomplicated.
           </p>
-          <a href="#" class="project-link">
+          <a href="#" class="text-link project-link">
             Visit Website
-            <i class="fas fa-arrow-right"></i>
+            <span>&rarr;</span>
           </a>
         </div>
 
         <div class="project-specs">
           <div class="specs-block">
-            <h6 class="spec-type">Platforms</h6>
+            <h6 class="spec-title">Platforms</h6>
             <ul class="list-unstyled section-list">
               <li>Desktop web</li>
               <li>Tablet web</li>
@@ -48,7 +51,7 @@
             </ul>
           </div>
           <div class="specs-block">
-            <h6 class="spec-type">Our Role</h6>
+            <h6 class="spec-title">Our Role</h6>
             <ul class="list-unstyled section-list">
               <li>Website creative & design direction</li>
               <li>User experience</li>
@@ -58,7 +61,7 @@
             </ul>
           </div>
           <div class="specs-block">
-            <h6 class="spec-type">Technology</h6>
+            <h6 class="spec-title">Technology</h6>
             <ul class="list-unstyled section-list">
               <li>HTML/CSS</li>
               <li>Javascript</li>
@@ -81,7 +84,10 @@
 
       <div class="project-info-wrapper">
         <div class="project-details dynamic-bg">
-          <div class="slider-next"><span>&larr;</span>tap here / drag to slide</div>
+          <div class="slider-next">
+            <span class="arrow">&larr;</span
+            ><span class="extra-text">tap here / drag to </span>slide
+          </div>
           <header class="project-header">
             <h5 class="project-subject">Company Website</h5>
             <h4 class="project-name">Trilliant Wealth</h4>
@@ -91,15 +97,15 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <a href="#" class="project-link">
+          <a href="#" class="text-link project-link">
             Visit Website
-            <i class="fas fa-arrow-right"></i>
+            <span>&rarr;</span>
           </a>
         </div>
 
         <div class="project-specs">
           <div class="specs-block">
-            <h6 class="spec-type">Platforms</h6>
+            <h6 class="spec-title">Platforms</h6>
             <ul class="list-unstyled section-list">
               <li>Desktop web</li>
               <li>Tablet web</li>
@@ -107,7 +113,7 @@
             </ul>
           </div>
           <div class="specs-block">
-            <h6 class="spec-type">Our Role</h6>
+            <h6 class="spec-title">Our Role</h6>
             <ul class="list-unstyled section-list">
               <li>Website creative & direction</li>
               <li>Logo design</li>
@@ -119,7 +125,7 @@
             </ul>
           </div>
           <div class="specs-block">
-            <h6 class="spec-type">Technology</h6>
+            <h6 class="spec-title">Technology</h6>
             <ul class="list-unstyled section-list">
               <li>HTML/CSS</li>
               <li>Javascript</li>

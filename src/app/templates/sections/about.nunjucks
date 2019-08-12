@@ -10,44 +10,32 @@
     }}
 
     <div class="about-wrapper">
-      <div class="row align-items-start">
-        <div class="col-md">
-          <div class="about-block">
-            <h4 class="about-header">We don't do everything, but what we do, we do well</h4>
-            <div class="more-indicator d-none d-xs-block"></div>
-            <p>
-              Together we have a combined 20+ years of design and development experience. Being
-              in the consulting business gives us exposure to a variety of tech stacks. This
-              means we can identify and use the best technology solution suited for your
-              business needs.
-            </p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="about-block">
-            <h4 class="about-header">
-              No matter the size of the project, quality is our focus
-            </h4>
-            <div class="more-indicator d-none d-xs-block"></div>
-            <p>
-              We are obessed with design and code quality. We stay up to date with tech trends
-              so we can use the latest and greatest technology available. We don’t just do the
-              minimal to get something done. We make sure the work is done the right way from
-              the begining to end.
-            </p>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="about-block">
-            <h4 class="about-header">We find simple solutions for complex problems</h4>
-            <div class="more-indicator d-none d-xs-block"></div>
-            <p>
-              By combining our expertise and an entrepreneurial mindset together, we can come
-              up with solutions to best match your business goals and budget. We don’t oversell
-              or over complicate the work, because the simplest solution is often the best.
-            </p>
-          </div>
-        </div>
+      <div class="about-block">
+        <h4 class="about-header">We don't do everything, but what we do, we do well</h4>
+        <p>
+          Together we have a combined 20+ years of design and development experience. Being in
+          the consulting business gives us exposure to a variety of tech stacks. This means we
+          can identify and use the best technology solution suited for your business needs.
+        </p>
+      </div>
+      <div class="about-block">
+        <h4 class="about-header">
+          No matter the size of the project, quality is our focus
+        </h4>
+        <p>
+          We are obessed with design and code quality. We stay up to date with tech trends so
+          we can use the latest and greatest technology available. We don’t just do the minimal
+          to get something done. We make sure the work is done the right way from the begining
+          to end.
+        </p>
+      </div>
+      <div class="about-block">
+        <h4 class="about-header">We find simple solutions for complex problems</h4>
+        <p>
+          By combining our expertise and an entrepreneurial mindset together, we can come up
+          with solutions to best match your business goals and budget. We don’t oversell or
+          over complicate the work, because the simplest solution is often the best.
+        </p>
       </div>
     </div>
   </div>

@@ -1,123 +1,111 @@
+// Hero styles
+//
 .hero {
   position: relative;
 
   .section-inner {
     height: 100vh;
   }
+}
 
-  .hero-content {
-    display: grid;
+// Brand (logo)
+//
+.brand-mobile {
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.brand {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+// Headines
+//
+.hero-content {
+  display: grid;
+  align-items: center;
+  height: 100%;
+
+  @include media-breakpoint-up(lg) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    height: 100%;
-
-    @include media-breakpoint-down(md) {
-      // flex-flow: column;
-      // text-align: center;
-      // justify-content: center;
-    }
   }
 
   .headline {
-    grid-column-start: 2;
-    grid-column-end: 5;
+    @include media-breakpoint-up(lg) {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+  }
 
-    h2 {
-      font-family: "Russo One", sans-serif;
-      font-weight: initial;
-      font-size: 8rem;
-      text-transform: uppercase;
-      margin-left: -0.4rem;
+  h2 {
+    font-family: "Russo One", sans-serif;
+    font-weight: initial;
+    font-size: $brand-title-xs;
+    text-transform: uppercase;
+    margin-left: -0.4rem;
+    margin-bottom: 1.75rem;
+    line-height: 1;
+
+    @include media-breakpoint-only(sm) {
+      font-size: $brand-title-sm;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      font-size: $brand-title-lg;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: $brand-title-xl;
+    }
+  }
+
+  h1,
+  h3 {
+    font-size: $hero-heading-xs;
+    margin: 0;
+    font-weight: $font-weight-normal;
+
+    @include media-breakpoint-only(sm) {
+      font-size: $hero-heading-sm;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      font-size: $hero-heading-lg;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: $hero-heading-xl;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    h1 {
       margin-bottom: 1.75rem;
-      line-height: 1;
-
-      @include media-breakpoint-between(sm, lg) {
-        font-size: 6rem;
-      }
-
-      @include media-breakpoint-down(xs) {
-        font-size: 3.25rem;
-      }
     }
-
-    h1,
-    h3 {
-      font-size: 1.75rem;
-      margin: 0;
-      font-weight: $font-weight-normal;
-
-      @include media-breakpoint-between(sm, lg) {
-        font-size: 1.3rem;
-      }
-
-      @include media-breakpoint-down(xs) {
-        font-size: 1rem;
-        line-height: 1.8;
-      }
+    .tail {
+      display: block;
     }
+  }
 
-    h3 span {
-      color: $header-highlight;
-      font-weight: $font-weight-bold;
+  #scroll-text {
+    color: $highlight;
+    font-weight: $font-weight-bold;
+  }
 
-      @include media-breakpoint-down(xs) {
-        display: block;
-        min-height: 1.8rem;
-        font-size: 1.5rem;
-      }
-    }
+  .btn-outline {
+    display: none;
 
-    .btn-outline {
+    @include media-breakpoint-up(md) {
+      display: inline-block;
       margin: 2.5em 0;
     }
-  }
-}
-
-// Mouse Animation
-//
-@keyframes mouse-scroll {
-  0% {
-    top: 20%;
-  }
-
-  40% {
-    top: 30%;
-  }
-
-  100% {
-    top: 20%;
-  }
-}
-
-.scroll-mouse {
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-
-  position: absolute;
-  bottom: $mouse-margin;
-  left: 0;
-  width: 100%;
-
-  .inner {
-    margin: 0 auto;
-    width: $mouse-width;
-    height: $mouse-height;
-    position: relative;
-    border-radius: $mouse-width/2 + $mouse-border-width * 2;
-    border: $mouse-border-width solid $mouse-color;
-  }
-
-  .wheel {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    width: $wheel-size;
-    height: $wheel-size * 2;
-    margin-left: -$wheel-size/2;
-    border-radius: $wheel-size;
-    background-color: $mouse-color;
-    animation: mouse-scroll 0.9s ease-in infinite;
   }
 }
 
@@ -125,32 +113,45 @@
 //
 .hero-layover {
   top: 0;
-  bottom: 0;
-  width: $section-spacing-h;
-  display: flex;
 
   &.layover-left {
     position: absolute;
-    left: 0;
     align-items: center;
     justify-items: center;
-    background-color: $cherry;
     z-index: -1;
+
+    @include media-breakpoint-down(md) {
+      margin-top: $nav-toggle-mobile-spacing + 0.75rem;
+      right: $nav-toggle-mobile-size + $nav-toggle-mobile-spacing;
+      width: 20rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      width: $section-spacing-h;
+      left: 0;
+      bottom: 0;
+      background-color: $cherry;
+    }
   }
 
   &.layover-right {
+    display: flex;
+    width: $nav-toggle-mobile-size;
     position: fixed;
     right: 0;
     z-index: 1;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: $nav-toggle-mobile-spacing 0;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 0;
       transition: background-color 0.3s ease-out;
-      height: 100%;
+      bottom: 0;
       width: $section-spacing-h;
+      height: 100%;
       &:hover {
         background-color: #222;
       }
@@ -160,25 +161,24 @@
 
 // Layover right
 //
-.brand {
-  .logo {
-    height: 2.5rem;
-
-    @include media-breakpoint-down(md) {
-      height: 2rem;
-    }
-  }
-}
-
 .section-hint {
   position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-top: $nav-toggle-mobile-spacing;
+    opacity: 0.6;
+  }
 
   .scroll-hint {
     position: absolute;
     white-space: nowrap;
-    top: -0.8rem;
+    top: -0.6rem;
     opacity: 0;
     transition: opacity 300ms ease-out;
+
+    @include media-breakpoint-up(lg) {
+      top: -0.8rem;
+    }
 
     &.active {
       opacity: 1;
@@ -186,16 +186,25 @@
   }
 
   .scroll-line {
-    margin-top: 8rem;
-    transition: height 300ms ease-out;
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      margin-top: 8rem;
+      transition: height 300ms ease-out;
+    }
   }
 }
 
 .hint-content {
   transform: rotate(90deg);
   transform-origin: center;
-  font-size: 0.875rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 0.875rem;
+  }
 }
 
 .page-end {
@@ -240,11 +249,17 @@
     color: rgba(#fff, 0.7);
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    text-align: center;
-    transform: rotate(-90deg);
-    transform-origin: 30% 190%;
-    width: 23rem;
-    font-size: 0.875rem;
+    font-size: 0.5rem;
+    text-align: right;
+
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: 30% 190%;
+      font-size: 0.875rem;
+      width: 23rem;
+      font-size: 0.65rem;
+    }
   }
 
   li {

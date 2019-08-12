@@ -5,48 +5,23 @@
 }
 
 .tech-block {
-  flex-basis: 25%;
+  flex-basis: 50%;
+  margin-bottom: 3rem;
 
-  img {
-    width: 4.5rem;
-    opacity: 0.7;
+  @include media-breakpoint-up(xl) {
+    flex-basis: 25%;
   }
 
   .tech-header {
-    position: relative;
-    font-size: 1.75rem;
-    margin: $block-spacing 0;
+    font-size: 1rem;
+    margin: $mobile-block-spacing 0;
     font-weight: $font-weight-bold;
 
-    &:before {
-      position: absolute;
-      top: -1.5rem;
-      left: 0;
-      font-size: 1rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+      margin: $block-spacing 0;
     }
   }
 
-  &:nth-child(1) {
-    .tech-header:before {
-      content: "01";
-    }
-  }
-
-  &:nth-child(2) {
-    .tech-header:before {
-      content: "02";
-    }
-  }
-
-  &:nth-child(3) {
-    .tech-header:before {
-      content: "03";
-    }
-  }
-
-  &:nth-child(4) {
-    .tech-header:before {
-      content: "04";
-    }
-  }
+  @include pseudo-number(4, tech-header);
 }
