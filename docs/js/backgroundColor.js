@@ -32,8 +32,8 @@
     service_app: color.orange,
     project1: "#944f48",
     project2: "#041835",
-    about: color.green,
-    process: color.cyan,
+    about: color.cyan,
+    process: color.green,
     tech: color.blue,
     contact: color.purple,
   };

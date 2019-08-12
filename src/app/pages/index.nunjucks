@@ -3,28 +3,28 @@
 <!-- Block content -->
 {% block content %}
 
-<!-- Hero Include -->
+<!-- Hero include -->
 {% include "sections/hero.nunjucks" %}
 
-<!-- Services Include -->
+<!-- Services include -->
 {% include "sections/services.nunjucks" %}
 
-<!-- Projects Include -->
+<!-- Projects include -->
 {% include "sections/projects.nunjucks" %}
 
-<!-- Process Include -->
+<!-- Process include -->
 {% include "sections/process.nunjucks" %}
 
-<!-- About Include -->
+<!-- About include -->
 {% include "sections/about.nunjucks" %}
 
-<!-- Tech Stack Include -->
+<!-- Tech Stack include -->
 {% include "sections/tech.nunjucks" %}
 
-<!-- Contact Include -->
+<!-- Contact include -->
 {% include "sections/contact.nunjucks" %}
 
-<!-- Footer Include -->
+<!-- Footer include -->
 {% include "sections/footer.nunjucks" %}
 
 <!-- Block content end -->

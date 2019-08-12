@@ -154,7 +154,6 @@ body.nav-open {
     margin: 0 $mobile-section-spacing-h;
 
     @include media-breakpoint-up(md) {
-      text-align: center;
       width: 50%;
       margin: 0 25%;
     }
@@ -197,7 +196,7 @@ body.nav-open {
       position: relative;
 
       @include media-breakpoint-up(md) {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: $font-weight-bold;
       }
     }

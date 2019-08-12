@@ -21,53 +21,36 @@
 @include media-breakpoint-up(lg) {
   .about-wrapper {
     display: flex;
-
-    .about-block {
-      margin-right: 2.5rem;
-    }
+    flex-flow: wrap;
   }
 }
 
 .about-block {
-  padding: $block-spacing 0;
+  padding-bottom: $block-spacing;
 
   .about-header {
     font-size: 1.25rem;
-    margin: $block-spacing 0;
+    margin: $mobile-block-spacing 0;
 
     @include media-breakpoint-up(sm) {
       font-size: 1.8rem;
+      margin: $block-spacing 0;
     }
   }
 
   @include pseudo-number(3, about-header);
 
-  // About blocks shown on hover
   @include media-breakpoint-up(lg) {
-    max-width: 35rem;
-    width: 75%;
-    padding: 0;
+    flex-basis: 50%;
+    padding-right: $block-spacing;
 
-    .about-header {
-      transform: translateY(5rem);
-      transition: transform 350ms $transition;
+    .about-header,
+    p {
+      max-width: 28rem;
     }
 
     p {
       font-size: 1.25rem;
-      opacity: 0;
-      transition: opacity 300ms ease-out;
-      transition-delay: 100ms;
-    }
-
-    &:hover {
-      .about-header {
-        transform: translateY(0);
-      }
-      p {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   }
 }

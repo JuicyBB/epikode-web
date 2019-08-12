@@ -1,3 +1,14 @@
+#tech {
+  .header-main {
+    @include media-breakpoint-only(sm) {
+      font-size: 1.8rem;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 2.25rem;
+    }
+  }
+}
+
 .tech-wrapper {
   display: flex;
   flex-flow: wrap;

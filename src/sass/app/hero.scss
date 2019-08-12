@@ -140,7 +140,7 @@
     width: $nav-toggle-mobile-size;
     position: fixed;
     right: 0;
-    z-index: 1;
+    z-index: 9;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -255,7 +255,7 @@
     @include media-breakpoint-up(lg) {
       text-align: center;
       transform: rotate(-90deg);
-      transform-origin: 30% 190%;
+      transform-origin: 30% 230%;
       font-size: 0.875rem;
       width: 23rem;
       font-size: 0.65rem;
