@@ -15,6 +15,10 @@
   @include media-breakpoint-down(md) {
     border-bottom: 1px solid #fff;
     padding: 1.75rem 0 0;
+
+    .content-wrapper {
+      padding-bottom: 1rem;
+    }
   }
 
   @include media-breakpoint-only(md) {
