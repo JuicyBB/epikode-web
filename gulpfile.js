@@ -175,7 +175,18 @@ gulp.task("build:scripts", ["clean:docs"], function() {
 });
 
 // Create combined script file
-gulp.task("build:combinejs", ["clean:docs"], function() {
+gulp.task("build:combineVendorJs", ["clean:docs"], function() {
+  if (!settings.scripts) return;
+
+  return gulp
+    .src(["node_modules/slick-carousel/slick/slick.min.js"])
+    .pipe(plumber())
+    .pipe(concat("vendor.js"))
+    .pipe(jsTasks());
+});
+
+// Create combined script file
+gulp.task("build:combineAppJs", ["clean:docs"], function() {
   if (!settings.scripts) return;
 
   return gulp
@@ -382,7 +393,8 @@ gulp.task("compile", [
   "lint:scripts",
   "clean:docs",
   "build:scripts",
-  "build:combinejs",
+  // "build:combineVendorJs",
+  "build:combineAppJs",
   "build:polyfills",
   "build:styles",
   "build:static",
